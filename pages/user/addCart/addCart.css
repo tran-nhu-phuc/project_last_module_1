@@ -1,0 +1,127 @@
+ .header {
+     padding-top: 10px;
+ }
+
+ .titleCart {
+     margin-top: 100px;
+     width: 60%;
+     margin-left: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     line-height: 3;
+     height: 300px;
+     padding-bottom: 100px;
+ }
+
+ .titleCart p {
+     font-size: 20px;
+ }
+
+ .titleCart h2 {
+     font-size: 40px;
+ }
+
+ .titleCart button {
+     padding: 10px 50px;
+     background-color: blue;
+     color: #ffff;
+     border-radius: 15px;
+     margin-top: 30px;
+ }
+
+ /* prodcut_cart */
+ .productCart {
+     width: 60%;
+     height: 600px;
+     padding: 30px;
+     margin-left: 20%;
+     row-gap: 20px;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+ }
+
+ .productCart .product .content {
+     display: flex;
+     column-gap: 20px;
+     justify-content: space-between;
+ }
+
+ .productCart .product .content .imageProduct img {
+     width: 200px;
+     height: 130px;
+     border-radius: 15px;
+     object-fit: cover;
+ }
+
+ .productCart .product .contentProduct {
+     display: flex;
+     flex-direction: column;
+     line-height: 3;
+     text-align: start;
+ }
+
+ .productCart .product .contentProduct a:nth-child(1) {
+     font-size: 20px;
+     color: black;
+ }
+
+ .productCart .product .countProduct {
+     padding-top: 20px;
+ }
+
+ .productCart .product .contentProduct a:hover {
+     color: blue;
+ }
+
+ .productCart .product .priceProduct {
+     display: flex;
+     text-align: end;
+     flex-direction: column;
+     line-height: 4;
+ }
+
+ /* textCart */
+ .textCart {
+     margin-top: 50px;
+     padding-top: 20px;
+ }
+
+ .textCart .textCart-1 {
+     width: 80%;
+     display: flex;
+     justify-content: space-between;
+     margin-left: 20%;
+     height: 100px;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     margin-bottom: 20px;
+ }
+
+ .textCart .textCart-1 .paragrap {
+     line-height: 4;
+ }
+
+ .textCart .textCart-1 .addProductVoucher {
+     padding-top: 20px;
+ }
+
+ .textCart .textCart-2 {
+     width: 80%;
+     display: flex;
+     justify-content: start;
+     margin-left: 20%;
+     height: 100px;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     margin-top: 30px;
+     padding-top: 30px;
+     line-height: 1.8;
+     column-gap: 20px;
+ }
+
+ .textCart .textCart-2 p {
+     font-size: 15px;
+ }
+
+ .textCart .textCart-2 span {
+     color: blue;
+ }
