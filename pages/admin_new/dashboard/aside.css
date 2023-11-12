@@ -1,0 +1,30 @@
+ aside {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     top: 0;
+     background-color: rgb(137, 80, 252);
+     padding-top: 50px;
+     width: 100px;
+ }
+
+ aside ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     row-gap: 30px;
+ }
+
+ aside ul li {
+     width: 100%;
+     height: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ aside ul li:hover {
+     background-color: aliceblue;
+ }

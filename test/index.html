@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="products" class="products"></section>
+      <hr style="margin: 20px 0" />
+      <section class="carts">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Name Product</th>
+              <th>Số lượng</th>
+              <th>Tổng giá</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p style="margin-top: 10px">
+          <strong>Tổng giá :</strong> <span id="total-price"></span>
+        </p>
+        <button class="payment">Thanh toán</button>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

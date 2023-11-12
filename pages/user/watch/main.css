@@ -1,0 +1,495 @@
+   body {
+       background-color: black;
+   }
+
+   header .header {
+       background-color: black;
+       color: #fff;
+   }
+
+   nav {
+       background-color: black;
+       color: #fff;
+       padding-bottom: 30px;
+   }
+ 
+ main .main .main-section-1-image {
+     background-image: url("../../../assets/image-watch/watch_banner_home.jpg");
+     height: 820px;
+     background-size: cover;
+     background-position: center;
+ }
+ main .main .text-main{
+    margin-bottom: 50px;
+ }
+ main .main .text-main .main-section-1-image-content {
+     color: #ffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 70px;
+     line-height: 1.5;
+ }
+
+ main .main .text-main .main-section-1-image-content span {
+     font-size: 12px;
+     color: orange;
+     font-weight: 600;
+ }
+
+ main .main .text-main .main-section-1-image-content h2 {
+     font-size: 30px;
+     opacity: 0.5;
+ }
+
+ main .main .text-main .main-section-1-image-content img {
+     width: 230px;
+     height: 80px;
+     margin: 10px 0 15px 0;
+ }
+
+ main .main .text-main .main-section-1-image-content button {
+     width: 100px;
+     border-radius: 50px;
+     height: 40px;
+     margin: 10px 0;
+     margin: 10px 0 20px 0;
+     background-color: blue;
+     color: #ffff;
+ }
+
+ main .main .text-main .main-section-1-image-content a {
+     color: blue;
+ }
+ /* section-2 */
+
+
+
+ main .main-2{
+    background-color:rgb(245, 245, 247);
+    color: black;
+ }
+ main .main-2 .main-2-section-2-image {
+     background-image: url("../../../assets/image-watch/watch_banner_home_2.jpg");
+     height: 820px;
+     background-size: cover;
+     background-position: center;
+ }
+
+ main .main-2 .text-main-2 {
+     margin-bottom: 50px;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content {
+     color: #ffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 70px;
+     line-height: 1.5;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content span {
+     font-size: 12px;
+     color: orange;
+     font-weight: 600;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content h3 {
+     font-size: 30px;
+     color: black;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content img {
+     width: 230px;
+     height: 80px;
+     margin: 10px 0 15px 0;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content button {
+     width: 100px;
+     border-radius: 50px;
+     height: 40px;
+     margin: 10px 0;
+     margin: 10px 0 20px 0;
+     background-color: blue;
+     color: #ffff;
+ }
+
+ main .main-2 .text-main-2 .main-2-section-2-image-content a {
+     color: blue;
+ }
+
+
+
+
+
+ /* section-3 */
+main .main-3 {
+    background-color: rgb(245, 245, 247);
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+}
+
+main .main-3 .main-3-section-3-image {
+    background-image: url("../../../assets/image-watch/watch_banner_watch_7.jpg");
+    height: 820px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+}
+
+main .main-3 .text-main-3 {
+    margin-bottom: 50px;
+}
+
+main .main-3 .text-main-3 .main-3-section-3-image-content {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+    height: 100%;
+    padding-left: 100px;
+}
+
+main .main-3 .text-main-3 .main-3-section-3-image-content span {
+    font-size: 12px;
+    color: orange;
+    font-weight: 600;
+}
+main .main-3 .text-main-3 .main-3-section-3-image-content h2{
+    font-size: 50px;
+    color: black;
+}
+main .main-3 .text-main-3 .main-3-section-3-image-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+main .main-3 .text-main-3 .main-3-section-3-image-content img {
+    width: 200px;
+    height: 80px;
+    margin: 10px 0 15px 0;
+}
+
+main .main-3 .text-main-3 .main-3-section-3-image-content button {
+    width: 130px;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px 0;
+    margin: 10px 0 20px 0;
+    background-color: blue;
+    color: #ffff;
+}
+
+main .main-3 .text-main-3 .main-3-section-3-image-content a {
+    color: blue;
+    font-size: 20px;
+}
+
+
+
+
+/* section-4 */
+main .main-4 {
+    background-color: rgb(245, 245, 247);
+    color: black;
+    padding: 20px;
+    width: 100%;
+    height: 820px;
+}
+
+main .main-4 .main-4-section-4-image {
+    background-image: url("../../../assets/image-watch/watch_banner_watch_8.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    width:44%;
+    margin-left: 31.2%;
+    height: 44.2%;
+    display: grid;
+}
+
+main .main-4 .text-main-4 {
+    margin-bottom: 50px;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+    height: 100%;
+    padding-left: 100px;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content span {
+    font-size: 12px;
+    color: orange;
+    font-weight: 600;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content h2 {
+    font-size: 50px;
+    color: black;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content img {
+    width: 200px;
+    height: 80px;
+    margin: 10px 0 15px 0;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content button {
+    width: 130px;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px 0;
+    margin: 10px 0 20px 0;
+    background-color: blue;
+    color: #ffff;
+}
+
+main .main-4 .text-main-4 .main-4-section-4-image-content a {
+    color: blue;
+    font-size: 20px;
+}
+
+/* out */
+.out{
+    background-color: rgb(245, 245, 247);
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.out h2{
+    font-size: 70px;
+}
+
+/* section-5 */
+.main-5{
+    background-color: rgb(245, 245, 247);
+}
+ .main-5 .main-5-div-1 {
+     width: 80%;
+     height: 600px;
+     display: grid;
+     grid-template-columns: auto auto;
+     margin-left: 10%;
+     background-color: #fff;
+     padding-top: 20px;
+ }
+
+ .main-5 .main-5-div-1 .image-main-5 {
+     display: grid;
+ }
+
+ .main-5 .main-5-div-1 .image-main-5 img {
+     width: 55%;
+     height: 55%;
+     margin-left: 45%;
+     margin-top: 20%;
+ }
+
+ .text-main-5 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     line-height: 2.5;
+ }
+
+ .text-main-5 strong {
+     font-size: 40px;
+ }
+
+ .text-main-5 p {
+     font-size: 20px;
+ }
+
+ .text-main-5 a {
+     color: blue;
+     font-size: 20px;
+ }
+/* section-6 */
+  .section-6 {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(245, 245, 247);
+      text-align: center;
+      padding: 50px 0;
+      line-height: 1.5;
+  }
+
+  .section-6 h2 {
+      font-size: 70px;
+  }
+
+  .section-6 p {
+      font-size: 25px;
+  }
+
+  .section-6 a {
+      font-size: 20px;
+      margin-top: 25px;
+  }
+  /* section-12 */
+          .main-12 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #fff;
+              padding: 20px 0;
+          }
+    
+          .main-12 .main-12-div-1 {
+              width: 370px;
+              height: 310px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              line-height: 2;
+          }
+                  .header {
+                      padding: 0 40px;
+                  }
+        
+                  .out-2 {
+                      width: 100%;
+                      height: 20px;
+                      background-color: #fff;
+                  }
+        
+                  .section-7 {
+                      display: grid;
+                      grid-template-columns: auto auto;
+                      background-color: #fff;
+                      gap: 20px;
+                  }
+        
+                  .section-7 .section-7-div-1 {
+                      width: 100%;
+                      height: 820px;
+                      background-color: rgb(245, 245, 247);
+                      padding-top: 50px;
+                      grid-column-start: 1;
+                      grid-column-end: 3;
+                  }
+        
+                  .section-7 .section-7-div-1 .section-7-text-1 {
+                      display: block;
+                      text-align: center;
+                      margin-bottom: 30px;
+                  }
+        
+                  .section-7 .section-7-div-1 .section-7-text-1 h4 {
+                      font-size: 25px;
+                      margin-bottom: 15px;
+                  }
+        
+                  .section-7 .section-7-div-1 .section-7-text-1 h2 {
+                      font-size: 35px;
+                  }
+        
+                  .section-7 .section-7-div-1 .section-7-text-1 button {
+                      width: 250px;
+                      height: 50px;
+                      border-radius: 50px;
+                      background-color: blue;
+                      color: #fff;
+                      margin-top: 30px;
+                  }
+        
+                  .section-7 .section-7-div-1 .section-7-image-1 {
+                      background-image: url("../../../assets/image-watch/watch_banner-watch_9.jpg");
+                      background-size: cover;
+                      background-position: center;
+                      width: 100%;
+                      height: 50%;
+                  }
+        
+                  /* 2 */
+                  .section-7 .section-7-div-2 {
+                      width: 100%;
+                      height: 820px;
+                      background-color: rgb(245, 245, 247);
+                      padding-top: 50px;
+                  }
+        
+                  .section-7 .section-7-div-2 .section-7-text-2 {
+                      display: block;
+                      text-align: center;
+                      margin-bottom: 30px;
+                  }
+        
+                  .section-7 .section-7-div-2 .section-7-text-2 h4 {
+                      font-size: 25px;
+                      margin-bottom: 15px;
+                  }
+        
+                  .section-7 .section-7-div-2 .section-7-text-2 h2 {
+                      font-size: 35px;
+                  }
+        
+                  .section-7 .section-7-div-2 .section-7-image-2 {
+                      background-image: url("../../../assets/image-watch/watch_banner_watch_10.jpg");
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      width: 100%;
+                      height: 50%;
+                  }
+        
+                  /* 3 */
+                  .section-7 .section-7-div-3 {
+                      width: 100%;
+                      height: 820px;
+                      background-color: rgb(245, 245, 247);
+                      padding-top: 50px;
+                  }
+        
+                  .section-7 .section-7-div-3 .section-7-text-3 {
+                      display: block;
+                      text-align: center;
+                      margin-bottom: 30px;
+                  }
+        
+                  .section-7 .section-7-div-3 .section-7-text-3 h4 {
+                      font-size: 25px;
+                      margin-bottom: 15px;
+                  }
+        
+                  .section-7 .section-7-div-3 .section-7-text-3 h2 {
+                      font-size: 35px;
+                  }
+        
+                  .section-7 .section-7-div-3 .section-7-image-3 {
+                      background-image: url("../../../assets/image-watch/watch_banner_watch_11.jpg");
+                      background-size: contain;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      width: 100%;
+                      height: 50%;
+                  }

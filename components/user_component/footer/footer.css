@@ -1,0 +1,122 @@
+footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6fa;
+}
+
+footer .footer {
+    width: 60%;
+    height: 599.41px;
+}
+
+footer .footer .footer-1 p {
+    color: #6e6e73;
+    font-size: 12px;
+    padding: 17px 0 11px;
+    border-bottom: 0.4px solid #6e6e73;
+    opacity: 0.5;
+}
+
+.footer .footer-2 {
+    display: flex;
+    column-gap: 5px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.footer .footer-2 ul li {
+    color: #424245;
+    font-size: 12px;
+    line-height: 2;
+    list-style-type: none;
+}
+
+.footer .footer-2-menu-1,
+.footer-2-menu-2,
+.footer-2-menu-3,
+.footer-2-menu-4,
+.footer-2-menu-5 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 30px;
+}
+
+footer .footer-3 {
+    padding-top: 10px;
+}
+
+footer .footer-3 .footer-3-div-1 {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #6e6e73;
+    opacity: 0.5;
+    font-size: 12px;
+    color: #6e6e73;
+}
+
+footer .footer-3 .footer-3-div-2 {
+    padding: 5px 0;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-1 p:nth-child(1) {
+    color: #424245;
+    font-size: 12px;
+    padding: 5px 30px 0 0;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-1 p {
+    font-size: 12px;
+    color: #424245;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-2 {
+    display: flex;
+    justify-content: start;
+    padding: 5px 30px 0 0;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-2>p {
+    color: #424245;
+    font-size: 12px;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-2 p:not(:nth-child(1)) {
+    padding: 5px 10px 5px 10px;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-2 p:nth-child(1) {
+    padding: 5px 10px 5px 0;
+}
+
+footer .footer-3 .footer-3-div-2 .footer-3-div-2-div-2 p:nth-child(2),
+p:nth-child(4) {
+    border-left: 0.3px solid #6e6e73;
+    border-right: 0.3px solid #6e6e73;
+}
+
+/*  */
+
+.footer-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-4 .footer-4-div-1>p {
+    font-size: 12px;
+    color: #424245;
+    opacity: 0.5;
+}
+
+.footer-4 .footer-4-div-2 img {
+    width: 120px;
+    height: 45.39px;
+}

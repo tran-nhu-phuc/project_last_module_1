@@ -1,0 +1,206 @@
+ .section-1 {
+     display: flex;
+     flex-direction: column;
+     height: 1200px;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(245, 245, 247);
+     padding: 100px 0;
+     margin-top: 50px;
+ }
+
+ .section-1 .section-1-text {
+     text-align: center;
+     padding-top: 50px;
+ }
+
+ .section-1 .section-1-text .h2 {
+     margin-top: 30px;
+     margin-bottom: 100px;
+     font-size: 70px;
+     font-weight: 600;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .section-1 .section-1-text .button {
+     display: flex;
+     column-gap: 20px;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+ }
+
+ .section-1 .section-1-text .button button {
+     width: 100px;
+     height: 40px;
+     background-color: blue;
+     color: #fff;
+     border-radius: 50px;
+ }
+
+ .section-1 .section-1-image {
+     background-image: url("../../../assets/image_tv&House/tv&house_banner_tv&house_2.jpg");
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     margin-bottom: 100px;
+ }
+
+ .menu .menu-list-1 {
+     color: black;
+ }
+
+ .menu .menu-list-1 .image-out {
+     width: 20px;
+     height: 70px;
+ }
+
+ /* section-2 */
+ .section-2 {
+     width: 100%;
+     height: 1000px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 100px;
+     background-color: rgb(245, 245, 247);
+ }
+
+ .section-2 .section-2-text {
+     flex: 30%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding-top: 50px;
+ }
+
+ .section-2 .section-2-text strong {
+     font-size: 70px;
+ }
+
+ .section-2 .section-2-image {
+     background-image: url("../../../assets/image_tv&House/tvv&house_banner_tv&house_3.jpg");
+     background-size: cover;
+     background-position: center;
+     width: 60%;
+     height: 100%;
+     flex: 70%;
+     border: 10px solid black;
+     box-shadow: 50px 40px 50px 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .section-2 .link {
+     padding-top: 20px;
+     font-size: 20px;
+     opacity: 0.5;
+     transition: 0.3s;
+ }
+
+ .section-2 .link a {
+     text-decoration: none;
+     color: black;
+ }
+ .section-2 .link:hover{
+    opacity: 1;
+    transform: scale(1.05);
+ }
+ .section-3 {
+     width: 100%;
+     padding: 30px 0;
+     background-color: rgb(245, 245, 247);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 20px;
+ }
+
+ .section-3 .section-3-div-1 {
+     text-align: center;
+ }
+
+ .section-3 .section-3-div-1 .h3 {
+     display: flex;
+     flex-direction: column;
+     font-size: 20px;
+     line-height: 1.3;
+     margin: 15px 0;
+     font-weight: 520;
+ }
+
+ .section-3 .section-3-div-1 button {
+     width: 200px;
+     height: 45px;
+     border-radius: 50px;
+     background-color: blue;
+     border: none;
+     color: #fff;
+     margin-bottom: 20px;
+ }
+
+ /* section-4 */
+ .section-4 {
+     background-color: rgb(245, 245, 247);
+ }
+
+ .section-4 .section-4-div-1 {
+     width: 80%;
+     background-color: #ffff;
+     display: flex;
+     height: 600px;
+     margin-left: 10%;
+ }
+
+ .section-4 .section-4-div-1 .image {
+     display: flex;
+     justify-content: end;
+     align-items: center;
+ }
+
+ .section-4 .section-4-div-1 .image img {
+     width: 342px;
+     height: 382px;
+ }
+
+ .section-4 .section-4-div-1 .content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ .section-4 .section-4-div-1 .content strong {
+     font-size: 50px;
+ }
+
+ .section-4 .section-4-div-1 .content p {
+     font-size: 20px;
+     margin: 15px 0;
+ }
+
+ .section-4 .section-4-div-1 .content a {
+     font-size: 17px;
+ }
+
+ /* section-5 */
+ .main-5 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(245, 245, 247);
+     width: 100%;
+ }
+
+ .main-5 .main-5-div-1 {
+     width: 370px;
+     height: 310px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     line-height: 2;
+ }

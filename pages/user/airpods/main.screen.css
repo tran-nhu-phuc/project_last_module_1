@@ -1,0 +1,309 @@
+@media screen and (max-width: 1400px){
+    .section-1{
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-color: black;
+    }
+    .section-1 h2{
+        font-size: 60px;
+    }
+    .section-1 p{
+        font-size: 23px;
+    }
+    .section-1 strong{
+        font-size: 23px;
+    }
+    .section-2 h2{
+        font-size: 60px;
+    }
+    .section-2 p{
+        font-size: 23px;
+    }
+    .section-2 strong{
+        font-size: 23px;
+    }
+    .section-3 h2{
+        font-size: 60px;
+    }
+    .section-3 p{
+        font-size: 23px;
+    }
+    .section-3 strong{
+        font-size: 23px;
+    }
+    .section-4 strong{
+        font-size: 23px;
+    }
+    .section-5 h2{
+        font-size: 60px;
+    }
+    .section-8 h2{
+        font-size: 60px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .section-1 h2 {
+        font-size: 55px;
+    }
+    .section-1 p{
+        font-size: 20px;
+    }
+    .section-1 strong{
+        font-size: 20px;
+    }
+     .section-1 .section-1-link {
+     position: absolute;
+     bottom: 30px;
+     left: 30%;
+    }
+    .section-2 .section-2-link {
+     position: absolute;
+     bottom: 30px;
+     left: 30%;
+    }
+    .section-3 .section-3-link {
+     position: absolute;
+     bottom: 30px;
+     left: 30%;
+    }
+    .section-4 .section-4-link {
+     position: absolute;
+     bottom: 30px;
+     left: 30%;
+    }
+    .section-11 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: center;
+      align-items: center;
+  }
+    .main-12{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-2 h2{
+        font-size: 55px;
+    }
+    .section-2 p{
+        font-size: 20px;
+    }
+    .section-2 strong{
+        font-size: 20px;
+    }
+    .section-3 h2{
+        font-size: 55px;
+    }
+    .section-3 p{
+        font-size: 20px;
+    }
+    .section-3 strong{
+        font-size: 20px;
+    }
+    .section-4 strong{
+        font-size: 20px;
+    } 
+    .section-5 h2{
+        font-size: 55px;
+    }
+    .section-8 h2{
+        font-size: 55px;
+    }
+    .section-10 .content strong {
+      font-size: 55px;
+  }
+}
+@media screen and (max-width: 900px){
+    .section-1 h2 {
+        font-size: 45px;
+    }
+    .section-1 p{
+        font-size: 19px;
+    }
+    .section-1 strong{
+        font-size: 19px;
+    }
+    .section-2 h2{
+        font-size: 45px;
+    }
+    .section-2 p{
+        font-size: 19px;
+    }
+    .section-2 strong{
+        font-size: 19px;
+    }
+    .section-3 h2{
+        font-size: 45px;
+    }
+    .section-3 p{
+        font-size: 19px;
+    }
+    .section-3 strong{
+        font-size: 19px;
+    }
+    .section-4 strong{
+        font-size: 19px;
+    }
+    .section-5 h2{
+        font-size: 45px;
+    }
+    .section-6{
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+        row-gap: 20px;
+    }
+    .section-7{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section-8 h2{
+        font-size: 45px;
+    }
+    .section-9{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section-10{
+        display: flex;
+        flex-direction: column;
+    }
+     .section-10 .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .section-10 .content strong {
+      font-size: 45px;
+  }
+    .section-11 {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-items: center;
+  }
+    /* .section-11{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    } */
+}
+@media screen and (max-width: 700px){
+    .section-1 h2 {
+        font-size: 35px;
+    }
+    .section-1 p{
+        font-size: 18px;
+    }
+    .section-1 strong{
+        font-size: 18px;
+    }
+    .section-2 h2{
+        font-size: 35px;
+    }
+    .section-2 p{
+        font-size: 18px;
+    }
+    .section-2 strong{
+        font-size: 18px;
+    }
+    .section-3 h2{
+        font-size: 35px;
+    }
+    .section-3 p{
+        font-size: 18px;
+    }
+    .section-3 strong{
+        font-size: 18px;
+    }
+    .section-4 strong{
+        font-size: 18px;
+    }
+    .section-5 h2{
+        font-size: 35px;
+    }
+    .section-8 h2{
+        font-size: 35px;
+    }
+    .section-10 .content strong {
+      font-size: 35px;
+  }
+}
+@media screen and (max-width: 500px){
+    .section-1 h2 {
+        font-size: 28px;
+    }
+    .section-1 p{
+        font-size: 17px;
+    }
+    .section-1 strong{
+        font-size: 17px;
+    }
+    .section-2 h2{
+        font-size: 28px;
+    }
+    .section-2 p{
+        font-size: 17px;
+    }
+    .section-2 strong{
+        font-size: 17px;
+    }
+     .section-1 .section-1-link {
+     position: absolute;
+     bottom: 30px;
+     left: 20%;
+    }
+    .section-2 .section-2-link {
+     position: absolute;
+     bottom: 30px;
+     left: 20%;
+    }
+    .section-3 .section-3-link {
+     position: absolute;
+     bottom: 30px;
+     left: 20%;
+    }
+    .section-4 .section-4-link {
+     position: absolute;
+     bottom: 30px;
+     left: 20%;
+    }
+    .section-3 h2{
+        font-size: 28px;
+    }
+    .section-3 p{
+        font-size: 17px;
+    }
+    .section-3 strong{
+        font-size: 17px;
+    }
+    .section-4 strong{
+        font-size: 13px;
+    }
+    .section-5 h2{
+        font-size: 28px;
+    }
+    .section-8 h2{
+        font-size: 28px;
+    }   
+    .section-10 .content strong {
+      font-size: 25px;
+  }
+  .section-10 .content p {
+      font-size: 17px;
+  }
+  .section-10 .image img {
+      width: 250px;
+      height: 270px;
+  }
+.section-11 {
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: center;
+    align-items: center;
+}
+}

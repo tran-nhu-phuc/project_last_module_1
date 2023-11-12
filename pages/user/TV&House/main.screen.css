@@ -1,0 +1,111 @@
+@media screen and (max-width: 1200px){
+    .section-1 .section-1-text .h2{
+        font-size: 60px;
+    }
+    .section-2 .section-2-text strong {
+        font-size: 60px;
+    }
+     .section-1{
+        height: 1100px;
+     }
+}
+@media screen and (max-width: 1000px){
+    .section-1 .section-1-text .h2{
+        font-size: 50px;
+    }
+    .section-2 .section-2-text strong {
+        font-size: 50px;
+    }
+    .section-1 .section-1-image{
+        width: 60%;
+    }
+    .section-1{
+        height: 1000px;
+     }
+}
+@media screen and (max-width: 900px){
+    .section-1 .section-1-text .h2{
+        font-size: 40px;
+    }
+    .section-2 .section-2-text strong {
+        font-size: 40px;
+    }
+        .section-1 .section-1-image{
+        width: 70%;
+    }
+    .section-1{
+        height: 900px;
+     }
+     .section-3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;  
+     }
+    .section-4-div-1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section-4 .section-4-div-1 .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4 .section-4-div-1 .image img{
+      width: 250px;
+      height: 270px;
+  }
+  .main-5{
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    padding: 20px 0;
+  }
+   .main-5 .main-5-div-1 {
+     width: 350px;
+     height: 290px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     line-height: 1.2;
+ }
+}
+@media screen and (max-width: 700px){
+    .section-1 .section-1-text .h2{
+        font-size: 35px;
+    }
+    .section-2 .section-2-text strong {
+        font-size: 35px;
+    }
+    .section-1 .section-1-image{
+        width: 80%;
+    }
+    .section-1{
+        height: 800px;
+     }
+     .section-2 .link a {
+        font-size: 17px;
+     }
+}
+@media screen and (max-width: 500px){
+    .section-1 .section-1-text .h2{
+        font-size: 30px;
+    }
+    .section-2 .section-2-text strong {
+        font-size: 30px;
+    }
+    .section-1 .section-1-image{
+        width: 90%;
+    }
+    .section-1{
+        height: 700px;
+     }
+}
+@media screen and (max-width: 400px){
+    .section-1 .section-1-image{
+        width: 100%;
+    }
+    .section-1{
+        height: 600px;
+     }
+}

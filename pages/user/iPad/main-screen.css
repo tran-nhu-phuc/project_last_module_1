@@ -1,0 +1,160 @@
+
+@media screen and (max-width:1100px){
+.section-1 .box-shadow-image .section-1-image-background .section-1-block .section-1-image-background-text h2 {
+        font-size: 40px;
+    }
+.section-1 .box-shadow-image .section-1-image-background .section-1-block .section-1-image-background-text-image span {
+    font-size: 17px;
+}
+ .section-1 .box-shadow-image .section-1-image-background .section-1-block {
+     top: 2%;
+     left: 20%;
+ }
+ .section-1 .box-shadow-image .section-1-image-background .section-1-block .section-1-link a {
+     color: rgb(0, 4, 255);
+ }
+.section-2 .box-shadow-image-1 .section-2-image-background-1 .section-2-block-1 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+}
+
+.section-2 .box-shadow-image-1 .section-2-image-background-1 .section-2-block-1 .section-2-image-background-text-1 h2 {
+    font-size: 40px;
+}
+
+.section-2 .box-shadow-image-1 .section-2-image-background-1 .section-2-block-1 .section-2-image-background-text-image-1 span {
+    font-size: 17px;
+    letter-spacing: 2;
+}
+  .section-3 .section-3-grid {
+    width: 80%;
+    margin-left: 10%;
+    height: 1376.78px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.section-3 .section-3-grid-3 h2 {
+    font-size: 30px
+}
+.section-4 .section-4-grid .section-4-grid-3 {
+    display: flex;
+    flex-direction: column;
+}
+        .section-5 {
+            font-size: 30px;
+        }
+ .section-6 .section-6-div-4 {
+     display: flex;
+     flex-direction: column;
+ }
+ .section-6 .section-6-div-4 .section-6-div-4-image {
+     display: grid;
+     grid-template-columns: auto auto;
+     margin-top: 10px;
+ }
+  .section-6 .section-6-div-4 .section-6-div-4-image div > img{
+    width: 150px;
+    height: 150px;
+  }
+    .section-6-grid {
+            display: flex;
+            flex-direction: column;
+        }
+    .section-6 .section-6-div-1 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    .section-6 .section-6-div-1 .section-6-div-1-image-1 {                                                            
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+    .section-6 .section-6-div-1 .section-6-div-1-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+        .section-6 .section-6-div-1 .section-6-div-1-text strong {
+            font-size: 20px;
+        }
+    
+        .section-6 .section-6-div-1 .section-6-div-1-text p {
+            font-size: 17px;
+        }
+                   .section-4 .section-4-grid .section-4-grid-1 {
+                       display: flex;
+                       flex-direction: column;  
+                   }
+}
+@media screen and (max-width:700px) {
+    .section-3 .section-3-grid-3 h2 {
+            font-size: 25px
+        }
+    .section-5 {
+        font-size: 25px;
+        }
+    .section-4 .section-4-grid .section-4-grid-1 .section-4-grid-1-text-1 h2 {
+        font-size: 25px;
+        }
+}
+
+@media screen and (max-width:800px) {
+    .section-1 .box-shadow-image .section-1-image-background .section-1-block {
+            top:55%;
+            left: 33%;
+        }
+         .section-1 .box-shadow-image .section-1-image-background .section-1-block .section-1-link a {
+            color: blue;
+         }
+        .section-2 .box-shadow-image-1 .section-2-image-background-1 .section-2-block-1 .section-2-image-background-text-1 h2 {
+            font-size: 30px;
+        }
+}
+@media screen and (max-width:500px) {
+    .section-1 .box-shadow-image .section-1-image-background .section-1-block {
+        top: 55%;
+        left: 25%;
+    }
+ .section-6 .section-6-div-4 .section-6-div-4-text {
+    padding-top: 30px;
+ }
+.section-6 .section-6-div-4 .section-6-div-4-image img {
+    width: 150px;
+    height: 150px;
+}
+.section-2 .box-shadow-image-1 .section-2-image-background-1 .section-2-block-1 {
+    position: absolute;
+    top: 68%;
+    left: 33%;
+}
+}
+@media screen and (max-width:400px){
+.section-6 .section-6-div-4 .section-6-div-4-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+  .section-3 .section-3-grid-1 h2 {
+      font-size: 25px;
+      color: #3f3f3f;
+  }
+  .section-3 .section-3-grid-2 h2 {
+      font-size: 25px;
+      color: #3f3f3f;
+  }
+  .section-3 .section-3-text {
+    font-size: 30px;
+  }
+        .section-4 .section-4-text {
+            font-size: 30px;
+        }
+        .section-5 {
+            font-size: 30px;
+        }
+}

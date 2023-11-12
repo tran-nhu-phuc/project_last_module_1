@@ -1,0 +1,28 @@
+ body {
+     position: relative;
+ }
+
+ header {
+     position: fixed;
+     top:0;
+     left: 100px;
+     right: 0;
+     background-color: #ffff;
+     color: black;
+    }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+ }
+
+ .menu {
+     display: flex;
+     column-gap: 20px;
+ }
+
+ .next-menu {
+     display: flex;
+     column-gap: 20px;
+ }

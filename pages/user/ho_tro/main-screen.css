@@ -1,0 +1,117 @@
+@media screen and (max-width: 1200px) {
+    .section-2{
+        font-size: 45px;
+    }
+    .section-5{
+        font-size: 23px;
+    }
+    .section-7 h2{
+        font-size: 32px;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 37px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 37px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-2 {
+        font-size: 38px;
+    }
+    .section-5{
+        font-size: 20px;
+    }
+    .section-7 h2{
+        font-size: 30px;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 33px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section-2 {
+        font-size: 32px;
+    }
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section-5{
+        font-size: 18px;
+    }
+    .section-7 h2{
+        font-size: 28px;
+        text-align: center;
+    }
+    .section-7 p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .section-7 a{
+        font-size: 15px;
+        text-align: center  ;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 30px;
+    }
+    .section-8 .section-8-div-1 p{
+        font-size: 15px;
+    }
+    .section-8 .section-8-div-1 a{
+        font-size: 15px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-2 {
+        font-size: 27px;
+    }
+    .section-7 h2{
+        font-size: 25px;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 27px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 28px;
+    }
+    .section-9 .section-9-div-1 button{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-2 {
+        font-size: 23px;
+    }
+    .section-7 h2{
+        font-size: 23px;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 25px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 24px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .section-2 {
+        font-size: 20px;
+    }
+    .section-7 h2{
+        font-size: 20px;
+    }
+    .section-8 .section-8-div-1 h2{
+        font-size: 22px;
+    }
+    .section-9 .section-9-div-1 h2{
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,220 @@
+@media (max-width:1200px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 40px;
+        text-align: center;
+    }
+      main .main-4 h2 {
+      font-size: 60px;
+  }
+    .main-6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-6 .image-main-6 img{
+        width: 40%;
+        height: 80%;
+     }
+     main .main-5 {
+      display: flex;
+      flex-direction: column;
+      margin:0 auto;
+  }
+  main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 strong {
+      font-size: 45px;
+  }
+  main .main-7 h2 {
+      font-size: 60px;
+  }
+    .section-10 .section-10-text strong{
+    font-size: 50px;
+}
+.section-11{
+    font-size: 30px;
+}
+}
+@media (max-width:1000px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 35px;
+    }
+     main .main-3 .main-3-main-3-content-3 h3{
+        font-size: 17px;
+        text-align: center;
+     }
+     main .main-3 .main-3-main-3-content-3 h2{
+        font-size: 20px;
+     }
+     main .main-3 .main-3-main-3-content-3 {
+        position: absolute;
+        top: 20%;
+        left: 6%;
+     }
+       main .main-4 h2 {
+      font-size: 50px;
+  }
+    main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 strong {
+      font-size: 40px;
+  }
+  main .main-7 h2 {
+      font-size: 50px;
+  }
+    .section-8 .section-8-text strong{
+        font-size: 50px;
+      }
+    .section-10 .section-10-text strong{
+    font-size: 40px;
+}
+.section-11 a{
+    font-size: 25px;
+}
+}
+@media (max-width:800px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 30px;
+    }
+     main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 strong {
+      font-size: 35px;
+  }
+    main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 h3 {
+      font-size: 17px;
+  }
+   main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 p {
+      font-size: 15px;
+  }
+  main .main-7 h2 {
+        font-size: 40px;
+    }
+     .section-8{
+        display: flex;
+        flex-direction: column;
+     }
+      .section-8 .section-8-text strong{
+        font-size: 40px;
+      }
+        .section-8 .section-8-text p{
+        font-size: 18px;
+      }
+        .section-8 .section-8-text a{
+            font-size: 17px;
+      }
+          main .main-5 .main-5-section-5-image-5-grid-3{
+    background-size: contain;
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+    background-color: #ffff;
+  }
+  .section-8 .section-8-image img {
+    width: 80%;
+    height: 80%;
+  }
+  .section-9{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-9 .section-9-text strong{
+    font-size: 30px;
+  }
+  .section-9 .section-9-text p {
+      font-size: 17px;
+  }
+   .section-9 .section-9-text a {
+      font-size: 17px;
+  }
+  .section-10 .section-10-text strong{
+    font-size: 30px;
+}
+.section-10 .section-10-text a{
+    font-size: 17px;
+}
+}
+@media (max-width:600px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 25px;
+    }
+
+    .main-6 {
+        display: flex;
+        flex-direction: column;
+    }
+    main .main-3 .main-3-main-3-content-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    main .main-4 h2 {
+      font-size: 40px;
+    }
+    main .main-5 .main-5-section-5-image-5-grid-1 .main-5-section-5-image-5-content-5 span{
+        font-size: 17px;
+   }
+    main .main-5 .main-5-section-5-image-5-grid-1 .main-5-section-5-image-5-content-5 a{
+        font-size: 16px;
+        text-align: center;
+    }
+    main .main-5 .main-5-section-5-image-5-grid-2 .main-5-section-5-image-5-content-5 span{
+        font-size: 17px;
+   }
+   main .main-5 .main-5-section-5-image-5-grid-2 .main-5-section-5-image-5-content-5 a{
+        font-size: 16px;
+        text-align: center;
+    }
+     main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 strong {
+      font-size: 25px;
+  }
+  main .main-7 h2 {
+      font-size: 30px;
+  }
+        .section-8 .section-8-text strong{
+        font-size: 30px;
+      }
+      .section-11 a{
+    font-size: 20px;
+}
+}
+@media (max-width:500px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 20px;
+    }
+      main .main-4 h2 {
+      font-size: 35px;
+  }
+  main .main-7 h2 {
+      font-size: 28px;
+  }
+  .section-11 a{
+    font-size: 17px;
+}
+}
+@media (max-width:400px) {
+    main .main-3 .main-3-main-3-content-3 h4 {
+        font-size: 19px;
+    }
+     main .main-3 .main-3-main-3-content-3 {
+        position: absolute;
+        top: 60%;
+        left: 45%;
+     }
+          .text-main-6 strong {
+       font-size: 30px;
+   }
+     main .main-4 h2 {
+      font-size: 20px;
+  }
+
+   .text-main-6 p {
+       font-size: 17px;
+   }
+
+   .text-main-6 a {
+       color: blue;
+       font-size: 17px;
+   }
+       .main-6 .image-main-6 img{
+        width: 80%;
+        height: 100%;
+     }
+
+}
+
+

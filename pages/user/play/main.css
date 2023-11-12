@@ -1,0 +1,305 @@
+ .section-5 {
+     width: 100%;
+     height: 500px;
+     background-color: rgb(245, 245, 247);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: black;
+     line-height: 1.5;
+ }
+
+ .section-5 img {
+     margin-bottom: 15px;
+ }
+
+ .section-5 p {
+     font-size: 30px;
+ }
+
+ .section-5 .button {
+     margin-top: 30px;
+ }
+
+ .section-5 .button button {
+     width: 150px;
+     height: 40px;
+     background-color: blue;
+     color: #fff;
+     border-radius: 50px;
+ }
+
+ .section-4 {
+     overflow-x: scroll;
+     display: flex;
+     align-items: center;
+     column-gap: 10px;
+     width: 100%;
+     height: auto;
+     scroll-snap-type: x mandatory;
+     /* transform: translateX(-100px); */
+ }
+
+ .section-4::-webkit-scrollbar {
+     display: none;
+ }
+
+ .section-4 .section-4-div-1 {
+     min-width: 429px;
+     height: 236px;
+     background-image: url("../../../assets/image_play/play_banner_play_5.jpg");
+     background-position: center;
+     background-size: cover;
+     opacity: 0.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     scroll-snap-align: center;
+ }
+
+ .section-4 .section-4-div-1:hover {
+     opacity: 1;
+ }
+
+ .section-4 .section-4-div-1 button {
+     padding: 20px 50px;
+     border-radius: 50px;
+     transition: 0.5s;
+ }
+
+ .section-4 .section-4-div-1:hover button {
+     /* animation: button 0.5s alternate-reverse; */
+     transform: translateY(-10px);
+ }
+ /* 2 */
+ .section-4 .section-4-div-2 {
+     min-width: 429px;
+     height: 236px;
+     background-image: url("../../../assets/image_play/play_banner-play_6.jpg");
+     background-position: center;
+     background-size: cover;
+     opacity: 0.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     scroll-snap-align: center;
+ }
+
+ .section-4 .section-4-div-2:hover {
+     opacity: 1;
+ }
+
+ .section-4 .section-4-div-2 button {
+     padding: 20px 50px;
+     border-radius: 50px;
+     transition: 0.5s;
+ }
+
+ .section-4 .section-4-div-2:hover button {
+     /* animation: button 0.5s alternate-reverse; */
+     transform: translateY(-10px);
+ }
+/* 3 */
+.section-4 .section-4-div-3 {
+    min-width: 429px;
+    height: 236px;
+    background-image: url("../../../assets/image_play/play_banner_play_7.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.section-4 .section-4-div-3:hover {
+    opacity: 1;
+}
+
+.section-4 .section-4-div-3 button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.section-4 .section-4-div-3:hover button {
+    /* animation: button 0.5s alternate-reverse; */
+    transform: translateY(-10px);
+}
+/* 4 */
+.section-4 .section-4-div-4 {
+    min-width: 429px;
+    height: 236px;
+    background-image: url("../../../assets/image_play/play_banner_play_8.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.section-4 .section-4-div-4:hover {
+    opacity: 1;
+}
+
+.section-4 .section-4-div-4 button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.section-4 .section-4-div-4:hover button {
+    /* animation: button 0.5s alternate-reverse; */
+    transform: translateY(-10px);
+}
+/* 5 */
+.section-4 .section-4-div-5 {
+    min-width: 429px;
+    height: 236px;
+    background-image: url("../../../assets/image_play/play_banner_play_9.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.section-4 .section-4-div-5:hover {
+    opacity: 1;
+}
+
+.section-4 .section-4-div-5 button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.section-4 .section-4-div-5:hover button {
+    /* animation: button 0.5s alternate-reverse; */
+    transform: translateY(-10px);
+}
+ /* @keyframes button {
+    from {
+      transform: translateY(10px);
+    }
+
+    to {
+      transform: translateY(-10px);
+    }
+  } */
+
+ body {
+     background-color: black;
+     color: #fff;
+ }
+
+ .section-1 {
+     width: 100%;
+     height: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .section-1 .h2 {
+     font-size: 70px;
+     text-align: center;
+     line-height: 1.3;
+ }
+
+ .section-1 .p {
+     text-align: center;
+     font-size: 18px;
+     margin-top: 20px;
+     line-height: 1.5;
+ }
+
+ .section-2 {
+     width: 100%;
+     height: 200px;
+     background-color: rgb(31, 30, 30);
+     color: #fff;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .section-2 .section-2-div-2 {
+     font-size: 20px;
+     text-align: center;
+     line-height: 1.4;
+ }
+
+ .section-2 .section-2-div-3 button {
+     width: 200px;
+     height: 45px;
+     border: 1px solid #ffff;
+     background-color: rgb(31, 30, 30);
+     color: #ffff;
+     border-radius: 50px;
+ }
+
+ .section-3 {
+     background-image: url("https://www.apple.com/v/services/h/images/services/overview/services/service-headers/tv_startframe__dw7yy2y8624i_large_2x.jpg");
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 820px;
+     display: flex;
+     justify-content: space-between;
+     align-items: end;
+     padding: 20px 20px;
+ }
+
+ .section-3 .section-3-div-1 .image-logo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+
+ .section-3 .section-3-div-1 .image-logo button {
+     width: 180px;
+     font-size: 17px;
+     margin-left: 5px;
+     height: 50px;
+     border-radius: 50px;
+     background-color: rgb(114, 137, 67);
+     color: #fff;
+ }
+
+ .section-3 .section-3-div-1 .text {
+     font-size: 25px;
+     line-height: 1.3;
+ }
+
+ .section-3 .section-3-div-2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 20px;
+ }
+
+ .section-3 .section-3-div-2 button:nth-child(1) {
+     width: 250px;
+     height: 50px;
+     border-radius: 50px;
+     color: black;
+     background-color: #fff;
+ }
+
+ .section-3 .section-3-div-2 button:nth-child(2) {
+     background-color: rgba(113, 114, 116, 0.1);
+     width: 200px;
+     height: 50px;
+     border-radius: 50px;
+     color: #fff;
+     border: 1px solid #ffff;
+ }

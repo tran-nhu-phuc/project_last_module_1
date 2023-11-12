@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Việt Nam</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://e7.pngegg.com/pngimages/991/940/png-clipart-apple-logo-apple-heart-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../../base.css" />
+  </head>
+  <body>
+    <form>
+      <div class="main">
+        <h1><i class="fa-brands fa-apple"></i></h1>
+        <input type="email" placeholder="your email" id="email" />
+        <input type="password" placeholder="password" id="password" />
+        <button onclick="getLogin()">Sign In</button>
+        <a href="#">Register</a>
+      </div>
+    </form>
+  </body>
+  <script src="../../../models/productsDB.js"></script>
+  <script src="../../../models/usersDB.js"></script>
+  <script src="./login.js"></script>
+</html>
+<style>
+  body {
+    position: relative;
+  }
+  form h1 i {
+    color: #000000;
+  }
+  form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../assets/images/promo_apple_event_october_startframe__c103urqj1uaa_large.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .main {
+    width: 600px;
+    height: 450px;
+    border: 0.4px solid rgb(66, 65, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    color: black;
+    border-radius: 15px;
+    position: fixed;
+    margin: 0 auto;
+    top: 20%;
+    left: 32%;
+    padding: 10px 0;
+  }
+  .main h1 {
+    font-size: 45px;
+    color: rgb(104, 100, 100, 0.7);
+    padding-bottom: 20px;
+  }
+  form .main h1:hover {
+    color: rgb(236, 50, 165);
+  }
+  .main input {
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    border: 0.4px solid rgb(99, 94, 94, 0.6);
+    background-color: transparent;
+    color: #020202;
+  }
+  .main button {
+    font-size: 20px;
+    width: 62.6%;
+    height: 60px;
+    border-radius: 10px;
+    border: 0.4px solid rgba(155, 154, 154, 0.6);
+    background-color: transparent;
+    color: #383737;
+    margin-bottom: 10px;
+  }
+  .main input:hover {
+    border: 1px solid rgb(15, 15, 15);
+  }
+  .main button:hover {
+    border: 1px solid rgb(27, 26, 26);
+  }
+  .main a {
+    margin-top: 7px;
+    color: rgb(0, 60, 255);
+  }
+</style>

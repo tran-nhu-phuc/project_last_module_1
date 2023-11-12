@@ -1,0 +1,100 @@
+ main {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     margin-left: 100px;
+     gap: 20px;
+     padding: 20px;
+     margin-top: 50px;
+ }
+
+ main section {
+     height: 500px;
+     border-radius: 20px;
+     background-color: #ffff;
+ }
+
+ /* a */
+
+ /* b */
+ .grid-b {
+     grid-column-start: 2;
+     grid-column-end: 4;
+ }
+
+ .grid-b .text-grid-large {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+ }
+
+ .grid-b .text-grid-large .new-arrivals h2 {
+     font-size: 25px;
+     margin-bottom: 5px;
+ }
+
+ .grid-b .text-grid-large .new-arrivals p {
+     font-size: 13px;
+     opacity: 0.5;
+ }
+
+ .grid-b .text-grid-large .new-arrivals-button button {
+     padding: 10px 20px;
+     background-color: rgb(137, 80, 252);
+     color: #ffff;
+     border-radius: 5px;
+ }
+
+ table tr th {
+     padding: 10px 0;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ }
+
+ table tr td {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+     padding: 20px 0;
+ }
+
+ table tr th {
+     opacity: 0.4;
+     text-align: start;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ /* e */
+ .grid-e .text-grid-e {
+     padding: 20px;
+ }
+
+ .grid-e .text-grid-e h2 {
+     font-size: 25px;
+     margin-bottom: 5px;
+ }
+
+ .grid-e .text-grid-e p {
+     font-size: 13px;
+     opacity: 0.5;
+ }
+
+ .grid-e .list-grid-e ul li {
+     width: 100%;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+     padding: 20px 10px;
+ }
+
+ .grid-e .button-grid-e {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+ }
+
+ .grid-e .button-grid-e button {
+     padding: 20px 85px;
+     border-radius: 20px;
+     color: #fff;
+     font-size: 17px;
+     background-color: rgb(27, 197, 189);
+ }
