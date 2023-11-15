@@ -187,42 +187,43 @@ function renderProduct() {
   });
 }
 function addToDetail(id) {
-  let getLocalUser = getAllItems("userLogin");
-  if (getLocalUser.name !== undefined) {
-    window.location.href = "../cart/cart.html?id=" + id;
-  } else {
-    alert("bạn chưa dăng nhập");
-    window.location.href = "../login/login.html";
-  }
+  window.location.href = "../cart/cart.html?id=" + id;
 }
-
-function addToCart(id) {
+// render số lượng sản phẩm khi add
+function renderCartNumber() {
+  console.log(12222);
   let userLogin = getAllItems("userLogin");
   let userLocal = getAllItems("user");
-  let productLocal = getAllItems("product_new");
-
-  let data = productLocal.find((item) => item.id == id);
-
   let user = userLocal.find((item) => item.id == userLogin.id);
-
-  let checkCart = user.cart.findIndex((item) => item.id == id);
-  if (checkCart != -1) {
-    user.cart[checkCart] = {
-      ...user.cart[checkCart],
-      quantity: user.cart[checkCart].quantity + 1,
-    };
-  } else {
-    user.cart.push({ ...data, quantity: 1 });
-  }
-
-  let indexUser = userLocal.findIndex((item) => item.id == user.id);
-  userLocal[indexUser] = user;
-  localStorage.setItem("user", JSON.stringify(userLocal));
   let dataCart = document.querySelector("#data-cart");
-  console.log(dataCart.getAttribute("data-cart"));
-  let getDataUserCart = 0;
-  for (let i = 0; i < user.cart.length; i++) {
-    getDataUserCart += user.cart[i].quantity;
+  dataCart.setAttribute("data-cart", user.cart.length);
+}
+// kiểm tra xem người dùng có đăng nhập hay chưa nếu đăng nhập rồi thì push vào
+function addToCart(id) {
+  let userLogin = getAllItems("userLogin");
+  if (userLogin == "") {
+    alert("chưa đăng nhập");
+    window.location.href = "../login/login.html";
+  } else {
+    let userLocal = getAllItems("user"); //lấy dữ liệu user từ local
+    let productLocal = getAllItems("product_new"); //lấy dữ liệu product từ local
+    let data = productLocal.find((item) => item.id == id); // find qua và lấy phần tử đầu tiên có trùng id với thằng đã đươc click
+    let user = userLocal.find((item) => item.id == userLogin.id); //find qua và lấy phần tử đầu tiên có id trùng với phần tử đã được login
+    let checkCart = user.cart.findIndex((item) => item.id == id); //lấy index đầu tiên từ cart của user
+    if (checkCart != -1) {
+      //nếu không tìm được giá trị nào thì gán object thành giá trị đầu tiên
+      user.cart[checkCart] = {
+        ...user.cart[checkCart],
+        quantity: user.cart[checkCart].quantity + 1,
+      };
+    } else {
+      //nếu có rồi thì cũng push vào và tăng giá trị lên một và không có gì thay đổi
+      user.cart.push({ ...data, quantity: 1 });
+    }
+
+    let indexUser = userLocal.findIndex((item) => item.id == user.id);
+    userLocal[indexUser] = user;
+    localStorage.setItem("user", JSON.stringify(userLocal));
+    renderCartNumber();
   }
-  dataCart.setAttribute("data-cart", getDataUserCart);
 }

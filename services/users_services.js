@@ -27,12 +27,4 @@ class User {
       return false;
     }
   }
-  // thực hiện công viêc logout
-  AddDetail(localUser) {
-    if (localUser === true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 }
