@@ -423,3 +423,34 @@ main{
             flex-direction: column;
             font-size: 30px;
         }
+
+
+
+
+                .menu {
+                    display: flex;
+                    margin-top: 50px;
+                    padding-left: 12%;
+                    column-gap: 15px;
+                    width: 100%;
+                    height: auto;
+                    overflow-x: scroll;
+                }
+        
+                .menu::-webkit-scrollbar {
+                    display: none;
+                }
+        
+                .menu .menu-list-1 img {
+                    width: 115px;
+                    height: 70px;
+                }
+        
+                .menu .menu-list-1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    font-size: 12px;
+                    row-gap: 8px;
+                }

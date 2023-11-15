@@ -1,5 +1,5 @@
-function getNameUser() {
-  let local = JSON.parse(localStorage.getItem("userLogin"));
+function getRenderNameUser() {
+  let local = getAllItems("userLogin");
   document.querySelector(
     ".menu-list-small-6"
   ).innerHTML = `<strong id="contentLogout" class="contentLogout" onclick="dropdown()">${local.name}</strong>
@@ -9,19 +9,27 @@ function getNameUser() {
     <button onclick="new()">new</button>
   </div>
 `;
+  let userLogin = document.querySelector(".logout-dropdown");
+  userLogin.style.display = "none";
+  if (local.name == undefined) {
+    document.querySelector(
+      ".menu-list-small-6"
+    ).innerHTML = `<a href="./pages/user/login/login.html">Chưa đăng nhập</a>`;
+  }
 }
-getNameUser();
 function logout() {
   localStorage.removeItem("userLogin"); //xóa khi logout
-  window.location.href = "./pages/user/login/login.html";
-  getNameUser();
+  window.location.href = "http://127.0.0.1:5500/pages/user/login/login.html";
+  getRenderNameUser();
 }
 function dropdown() {
-  let dropdown = document.querySelector(".logout-dropdown");
-  dropdown.style.display = "block";
+  let noUser = document.querySelector("#user");
+  let user = document.querySelector(".logout-dropdown");
+  user.style.display = "block";
+  noUser.style.display = "none";
+  getRenderNameUser();
 }
-let body = document.querySelector("main");
-body.addEventListener("click", function () {
-  let dropdown = document.querySelector(".logout-dropdown");
-  dropdown.style.display = "none";
+
+document.querySelector("main").addEventListener("click", function () {
+  document.querySelector(".logout-dropdown").style.display = "none";
 });

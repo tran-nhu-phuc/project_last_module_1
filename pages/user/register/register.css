@@ -1,0 +1,74 @@
+body {
+    position: relative;
+}
+
+form h2 i {
+    color: #000000;
+}
+
+form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../assets/images/promo_apple_event_october_startframe__c103urqj1uaa_large.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+form .main {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(14, 13, 13, 0.3);
+    padding: 10px 0;
+}
+
+form .main h2 {
+    font-size: 40px;
+    color: rgba(54, 52, 52, 0.8);
+}
+
+form .main h2:hover {
+    color: rgb(236, 50, 165);
+}
+
+form .main input {
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    border: 0.4px solid rgb(99, 94, 94, 0.3);
+    background-color: transparent;
+    color: #000000;
+}
+
+form .main button {
+    font-size: 20px;
+    width: 62.6%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid rgb(34, 33, 33);
+    color: #000000;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.main input:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.main a {
+    margin-top: 5px;
+    color: blue;
+}

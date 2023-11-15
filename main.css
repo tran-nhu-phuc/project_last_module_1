@@ -514,3 +514,35 @@ main .main-5,.main-7,.main-9 {
         background-position: center;
     }
 }
+  .contentLogout {
+      font-size: 25px;
+      margin-left: 5px;
+      color: greenyellow;
+  }
+
+  .logout-dropdown {
+      display: flex;
+      flex-direction: column;
+      margin-top: 11px;
+      display: none;
+      width: 150px;
+      height: 100%;
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logout-dropdown button {
+      padding: 10px 20px;
+      z-index: 1000;
+      background-color: black;
+      width: 100%;
+      font-size: 17px;
+      color: #ffff;
+      text-align: center;
+  }
+
+  .logout-dropdown button:hover {
+      background-color: #ffff;
+      color: black;
+  }

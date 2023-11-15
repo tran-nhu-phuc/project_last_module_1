@@ -454,4 +454,6 @@ h2{
       display: none;
   }
 
-  /* section_8 */
+  header .header {
+      padding-top: 13px;
+  }

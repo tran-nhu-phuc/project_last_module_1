@@ -1,0 +1,503 @@
+  body {
+    background-color: rgb(242, 242, 242);
+  }
+
+  nav {
+    color: black;
+  }
+
+  main .main {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: black;
+  }
+
+  .menu {
+    padding-bottom: 10px;
+  }
+
+  main .main .main-section-1-image {
+    background-image: url("../../../assets/image-iphone/iphone_15_banner_home.jpg");
+    height: 820px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content span {
+    font-size: 12px;
+    color: orange;
+    font-weight: 600;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content h2 {
+    font-size: 30px;
+    opacity: 0.5;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content img {
+    width: 230px;
+    height: 45px;
+    margin: 10px 0 15px 0;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content button {
+    width: 100px;
+    border-radius: 50px;
+    height: 40px;
+    margin: 10px 0;
+    margin: 10px 0 20px 0;
+    background-color: blue;
+    color: #ffff;
+  }
+
+  main .main .main-section-1-image .main-section-1-image-content a {
+    color: blue;
+  }
+
+  /* section-2 */
+  main .main-2 {
+    background-color: rgb(245, 245, 247);
+    padding: 10px 0;
+  }
+
+  main .main-2 .main-2-section-2-image-2 {
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_7.jpg");
+    height: 693px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 {
+    color: rgb(173, 173, 177);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2:hover {
+    color: rgb(217, 255, 1);
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 span {
+    font-size: 17px;
+    color: orange;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 h2 {
+    font-size: 30px;
+    opacity: 0.8;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 strong {
+    font-size: 50px;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 button {
+    width: 100px;
+    border-radius: 50px;
+    height: 40px;
+    margin: 10px 0;
+    margin: 10px 0 20px 0;
+    background-color: blue;
+    color: #ffff;
+  }
+
+  main .main-2 .main-2-section-2-image-2 .main-2-section-2-image-2-content-2 a {
+    color: blue;
+  }
+
+  /* section-3 */
+  main .main-3 {
+    width: 100%;
+    height: 830px;
+    display: flex;
+    background-color: rgb(251, 251, 253);
+    z-index: -1;
+    justify-content: start;
+    align-items: center;
+    column-gap: 200px;
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_8.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+    position: relative;
+  }
+
+  main .main-3 .main-3-main-3-content-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+  }
+
+  .main-3 .main-3-main-3-content-3 h2 {
+    font-size: 30px;
+    font-size: 600;
+    margin: 10px 0;
+  }
+
+  .main-3 .main-3-main-3-content-3 h4 {
+    font-size: 50px;
+    margin: 10px 0 0 0;
+    color: blue;
+    font-weight: 600;
+  }
+
+  main .main-3 .main-3-main-3-content-3 button {
+    width: 100px;
+    border-radius: 50px;
+    height: 40px;
+    margin: 10px 0 20px 0;
+    background-color: blue;
+    color: #ffff;
+  }
+
+  main .main-3 .main-3-main-3-content-3 h3 {
+    margin: 20px 0;
+  }
+
+  main .main-3 .main-3-main-3-content-3 a {
+    color: blue;
+  }
+
+  main .main-4 h2 {
+    font-size: 70px;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+
+  /* section-5 */
+  main .main-5 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+    gap: 20px;
+  }
+
+  /* main .main-5 {
+    background-color: rgb(245, 245, 247);
+    padding: 10px 0;
+  } */
+  main .main-5 .main-5-section-5-image-5-grid-1 {
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_9.jpg");
+    height: 693px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #ffff;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-1 .main-5-section-5-image-5-content-5 {
+    color: rgb(29, 29, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-1 .main-5-section-5-image-5-content-5 span {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-1 .main-5-section-5-image-5-content-5 a {
+    color: blue;
+    margin-top: 20px;
+  }
+
+  /* grid 2 */
+  main .main-5 .main-5-section-5-image-5-grid-2 {
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_10.jpg");
+    height: 693px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #ffff;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-2 .main-5-section-5-image-5-content-5 {
+    color: rgb(29, 29, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-2 .main-5-section-5-image-5-content-5 span {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-2 .main-5-section-5-image-5-content-5 a {
+    color: blue;
+    margin-top: 20px;
+  }
+
+  /* grid 3 */
+  main .main-5 .main-5-section-5-image-5-grid-3 {
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_11.jpg");
+    height: 693px;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 {
+    color: rgb(29, 29, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    line-height: 1.5;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 strong {
+    font-size: 50px;
+  }
+
+  main .main-5 .main-5-section-5-image-5-grid-3 .main-5-section-5-image-5-content-5 a {
+    color: blue;
+    margin-top: 20px;
+  }
+
+  /* section-6 */
+  .main-6 {
+    width: 80%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+    background-color: #fff;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-6 .image-main-6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-6 .image-main-6 img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .text-main-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5;
+    text-align: center;
+  }
+
+  .text-main-6 strong {
+    font-size: 40px;
+  }
+
+  .text-main-6 p {
+    font-size: 20px;
+  }
+
+  .text-main-6 a {
+    color: blue;
+    font-size: 20px;
+  }
+
+  /* section-7 */
+
+
+  main .main-7 h2 {
+    font-size: 70px;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .section-8 {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    background-color: #fff;
+    line-height: 1.7;
+  }
+
+  .section-8 .section-8-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-8 .section-8-text strong {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .section-8 .section-8-text p {
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .section-8 .section-8-text a {
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+  }
+
+  .section-8 .section-8-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-8 .section-8-image img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* section-9 */
+  .section-9 {
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    background-color: #fff;
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-9 .section-9-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-9 .section-9-text strong {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .section-9 .section-9-text p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .section-9 .section-9-text a {
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+  }
+
+  .section-9 .section-9-image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-9 .section-9-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* section-10 */
+  .section-10 {
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-10 .section-10-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    /* background-repeat: no-repeat; */
+  }
+
+  .section-10 .section-10-text strong {
+    font-size: 30px;
+  }
+
+  .section-10 .section-10-text a {
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+  }
+
+  .section-10 .section-10-image {
+    background-image: url("../../../assets/image-iphone/iphone_banner_iphone_12.jpg");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .section-11 {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .section-11 a {
+    font-size: 30px;
+  }
+
+  /* section-12 */
+  .main-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-12 .main-12-div-1 {
+    width: 370px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }

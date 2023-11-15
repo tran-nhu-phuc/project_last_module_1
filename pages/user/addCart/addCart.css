@@ -34,11 +34,21 @@
  /* prodcut_cart */
  .productCart {
      width: 60%;
-     height: 600px;
+     height: 1000px;
      padding: 30px;
      margin-left: 20%;
      row-gap: 20px;
      border-top: 1px solid rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     row-gap: 30px;
+     overflow-y: scroll;
+ }
+
+ .productCart .product {
+     background-color: #ffff;
+     padding: 20px;
+     border-radius: 20px;
  }
 
  .productCart .product .content {
@@ -51,7 +61,7 @@
      width: 200px;
      height: 130px;
      border-radius: 15px;
-     object-fit: cover;
+     object-fit: contain;
  }
 
  .productCart .product .contentProduct {

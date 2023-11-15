@@ -1,14 +1,13 @@
 function getLogin() {
-  let email = document.getElementById("email");
-  let password = document.getElementById("password");
-  let localLogin = JSON.parse(localStorage.getItem("user"));
-  let checkLogin = localLogin.find((item) => {
-    return item.email === email.value && item.password === password.value;
-  });
+  event.preventDefault();
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  let login = new User();
+  let checkLogin = login.Login(email, password);
   if (checkLogin) {
     window.location.href = "../../../index.html";
-    localStorage.setItem("userLogin", JSON.stringify(checkLogin)); //lưu login khi đăng nhập và sẽ xóa khi logout
+    localStorage.setItem("userLogin", JSON.stringify(checkLogin));
   } else {
-    alert("tài khoản không đúng");
+    alert("tài khoản không tồn tại");
   }
 }

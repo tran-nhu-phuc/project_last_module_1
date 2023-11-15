@@ -40,16 +40,12 @@
           <div class="header-nav-menu-box">
             <ul class="list" id="list">
               <li class="menu-list-small-1">
-                <a href="http://127.0.0.1:5500/index.html" target="_top"
+                <a href="./index.html" target="_top"
                   ><i class="fa-brands fa-apple"></i
                 ></a>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                  target="_top"
-                  >Cửa hàng</a
-                >
+                <a href="./pages/user/shop/shop.html" target="_top">Cửa hàng</a>
                 <div class="sub-menu-1" id="sub-menu-1">
                   <ul class="sub-menu-1-a">
                     <li>Mua hàng</li>
@@ -81,12 +77,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/mac/index.html"
-                  target="_top"
-                >
-                  Mac</a
-                >
+                <a href="./pages/user/mac/mac.html" target="_top"> Mac</a>
                 <div class="sub-menu-1" id="sub-menu-1">
                   <ul class="sub-menu-1-a">
                     <li>Mua hàng</li>
@@ -122,9 +113,7 @@
                 id="menu-list-small-2"
                 target="_top"
               >
-                <a href="http://127.0.0.1:5500/pages/user/iPad/index.html"
-                  >ipad</a
-                >
+                <a href="./pages/user/iPad/ipad.html">ipad</a>
                 <div class="sub-menu-1" id="sub-menu-1">
                   <ul class="sub-menu-1-a">
                     <li>Mua hàng</li>
@@ -156,9 +145,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/iPhone/index.html"
-                  target="_top"
+                <a href="./pages/user/iPhone/iphone.html" target="_top"
                   >iphone</a
                 >
                 <div class="sub-menu-1" id="sub-menu-1">
@@ -192,11 +179,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/watch/index.html"
-                  target="_top"
-                  >Watch</a
-                >
+                <a href="./pages/user/watch/watch.html" target="_top">Watch</a>
                 <div class="sub-menu-1" id="sub-menu-1">
                   <ul class="sub-menu-1-a">
                     <li>Mua hàng</li>
@@ -228,9 +211,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/airpods/index.html"
-                  target="_top"
+                <a href="./pages/user/airpods/airpod.html" target="_top"
                   >AirPods</a
                 >
                 <div class="sub-menu-1" id="sub-menu-1">
@@ -264,10 +245,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/TV&House/index.html"
-                  target="_top"
-                >
+                <a href="./pages/user/TV&House/tv&house.html" target="_top">
                   TV & Nhà</a
                 >
                 <div class="sub-menu-1" id="sub-menu-1">
@@ -301,11 +279,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/play/index.html"
-                  target="_top"
-                  >Giải Trí</a
-                >
+                <a href="./pages/user/play/play.html" target="_top">Giải Trí</a>
                 <div class="sub-menu-1" id="sub-menu-1">
                   <ul class="sub-menu-1-a">
                     <li>Mua hàng</li>
@@ -337,9 +311,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/phu_kien/index.html"
-                  target="_top"
+                <a href="./pages/user/phu_kien/phu_kien.html" target="_top"
                   >Phụ kiện</a
                 >
                 <div class="sub-menu-1" id="sub-menu-1">
@@ -373,9 +345,7 @@
                 </div>
               </li>
               <li class="menu-list-small-2" id="menu-list-small-2">
-                <a
-                  href="http://127.0.0.1:5500/pages/user/ho_tro/index.html"
-                  target="_top"
+                <a href="./pages/user/ho_tro/ho-tro.html" target="_top"
                   >Hỗ trợ</a
                 >
                 <div class="sub-menu-1" id="sub-menu-1">
@@ -419,13 +389,17 @@
                 </i>
               </li>
               <li class="menu-list-small-4">
-                <i class="fa-solid fa-bag-shopping" data-cart="0"></i>
+                <i
+                  class="fa-solid fa-bag-shopping"
+                  data-cart="0"
+                  onclick="window.location.href='./pages/user/addCart/addCart.html'"
+                ></i>
               </li>
               <li class="menu-list-small-5">
                 <i class="fa-solid fa-bars"></i>
               </li>
               <li class="menu-list-small-6">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-user" id="user"></i>
               </li>
             </ul>
           </div>
@@ -439,10 +413,10 @@
             <h2>iPhone 15 Pro</h2>
             <h3>Titan. Thật bền chắc. Thật nhẹ. Thật Pro.</h3>
             <div class="main-section-1-image-content-icon">
-              <a href="http://127.0.0.1:5500/pages/user/iPhone/index.html">
+              <a href="./pages/user/iPhone/iphone.html">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a href="http://127.0.0.1:5500/pages/user/shop/index.html"
+              <a href="./pages/user/shop/shop.html"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -455,10 +429,10 @@
             <h2><i class="fa-brands fa-apple"></i>iPhone 15 Pro</h2>
             <h3>Camera mới. Thiết kế mới. Mới lịm tim.</h3>
             <div class="main-2-section-2-image-2-content-2-icon-2">
-              <a href="#">
+              <a href="./pages/user/iPhone/iphone.html">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a href="http://127.0.0.1:5500/pages/user/shop/index.html"
+              <a href="./pages/user/shop/shop.html"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -471,10 +445,10 @@
             <h2>Watch</h2>
             <h3>Thông minh hơn. Sáng hơn. Quyền năng hơn.</h3>
             <div class="main-3-section-3-image-3-content-3-icon-3">
-              <a href="http://127.0.0.1:5500/pages/user/watch/index.html">
+              <a href="./pages/user/watch/watch.html">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a href="http://127.0.0.1:5500/pages/user/shop/index.html"
+              <a href="./pages/user/shop/shop.html"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -488,10 +462,7 @@
             <h3>Xem sự kiện vào ngày 31 tháng 10,</h3>
             <h5>lúc 07:00 sáng, giờ Việt Nam.</h5>
             <div class="main-4-section-4-image-4-content-4-icon-4">
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
-              >
+              <a href="./pages/user/shop/shop.html" target="_top">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -505,12 +476,10 @@
             <h4>Ultra 2</h4>
             <h3>Một đẳng cấp phiêu lưu mới.</h3>
             <div class="main-5-section-5-image-5-content-5-icon-5">
-              <a href="http://127.0.0.1:5500/pages/user/iPad/index.html">
+              <a href="./pages/user/watch/watch.html">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
+              <a href="./pages/user/shop/shop.html" target="_top"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -524,15 +493,10 @@
             <h3>Một mối quá tuyệt vời...</h3>
             <h4>SE</h4>
             <div class="main-6-section-6-image-6-content-6-icon-6">
-              <a
-                href="http://127.0.0.1:5500/pages/user/iPad/index.html"
-                target="_top"
-              >
+              <a href="./pages/user/watch/watch.html" target="_top">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
+              <a href="./pages/user/shop/shop.html" target="_top"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -545,15 +509,10 @@
             <h2>MacBook Air 15</h2>
             <h3>Lớn ấn tượng. Mỏng không tưởng.</h3>
             <div class="main-7-section-7-image-7-content-7-icon-7">
-              <a
-                href="http://127.0.0.1:5500/pages/user/mac/index.html"
-                target="_top"
-              >
+              <a href="./pages/user/mac/mac.html" target="_top">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
+              <a href="./pages/user/shop/shop.html" target="_top"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -566,15 +525,10 @@
             <h2>iPad</h2>
             <h3>Thấy là yêu. Vẽ là phiêu. Tuyệt diệu.</h3>
             <div class="main-8-section-8-image-8-content-8-icon-8">
-              <a
-                href="http://127.0.0.1:5500/pages/user/iPad/index.html"
-                target="_top"
-              >
+              <a href="./pages/user/iPad/ipad.html" target="_top">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
+              <a href="./pages/user/shop/shop.html" target="_top"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -587,15 +541,10 @@
             <h2>AirPods Pro</h2>
             <h3>Âm Thanh Thích Ứng. Đang phát.</h3>
             <div class="main-9-section-9-image-9-content-9-icon-9">
-              <a
-                href="http://127.0.0.1:5500/pages/user/airpods/index.html"
-                target="_top"
-              >
+              <a href="./pages/user/airpods/airpod.html" target="_top">
                 Tìm hiểu thêm <i class="fa-solid fa-chevron-right"></i
               ></a>
-              <a
-                href="http://127.0.0.1:5500/pages/user/shop/index.html"
-                target="_top"
+              <a href="./pages/user/shop/shop.html" target="_top"
                 >Mua <i class="fa-solid fa-chevron-right"></i
               ></a>
             </div>
@@ -755,38 +704,12 @@
       </div>
     </footer>
   </body>
-  <script src="../models/productsDB.js"></script>
-  <script src="index.js"></script>
+  <script src="./roponsitory/repository.js"></script>
+  <script src="./services/users_services.js"></script>
   <script src="./models/usersDB.js"></script>
+  <script src="index.js"></script>
+  <script>
+    getRenderNameUser();
+  </script>
 </html>
-<style>
-  .contentLogout {
-    font-size: 25px;
-    margin-left: 5px;
-    color: greenyellow;
-  }
-  .logout-dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 11px;
-    display: none;
-    width: 150px;
-    height: 100%;
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-  }
-  .logout-dropdown button {
-    padding: 10px 20px;
-    z-index: 1000;
-    background-color: black;
-    width: 100%;
-    font-size: 17px;
-    color: #ffff;
-    text-align: center;
-  }
-  .logout-dropdown button:hover {
-    background-color: #ffff;
-    color: black;
-  }
-</style>
+<style></style>
