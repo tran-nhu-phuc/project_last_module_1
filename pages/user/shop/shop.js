@@ -57,7 +57,7 @@ function renderProduct() {
             src="../../../${element.image}"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -76,7 +76,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div> 
         </div>
@@ -95,7 +95,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -114,7 +114,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -134,7 +134,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -153,7 +153,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -172,7 +172,7 @@ function renderProduct() {
             alt="image"
           />
           <div class="button">
-            <p>Từ 28.999.000đhoặc 1.181.000đ/thángmỗi tháng trong 24 tháng*</p>
+            <p>Từ  ${element.cost}đ hoặc 1.181.000đ/tháng mỗi tháng trong 24 tháng*</p>
             <button onclick="addToCart(${element.id})">Add To Cart</button>
           </div>
         </div>
@@ -187,11 +187,10 @@ function renderProduct() {
   });
 }
 function addToDetail(id) {
-  window.location.href = "../cart/cart.html?id=" + id;
+  window.location.href = "../cart_detail/cart.html?id=" + id;
 }
 // render số lượng sản phẩm khi add
 function renderCartNumber() {
-  console.log(12222);
   let userLogin = getAllItems("userLogin");
   let userLocal = getAllItems("user");
   let user = userLocal.find((item) => item.id == userLogin.id);
@@ -209,18 +208,15 @@ function addToCart(id) {
     let productLocal = getAllItems("product_new"); //lấy dữ liệu product từ local
     let data = productLocal.find((item) => item.id == id); // find qua và lấy phần tử đầu tiên có trùng id với thằng đã đươc click
     let user = userLocal.find((item) => item.id == userLogin.id); //find qua và lấy phần tử đầu tiên có id trùng với phần tử đã được login
-    let checkCart = user.cart.findIndex((item) => item.id == id); //lấy index đầu tiên từ cart của user
+    let checkCart = user.cart.findIndex((item) => item.id == id);
     if (checkCart != -1) {
-      //nếu không tìm được giá trị nào thì gán object thành giá trị đầu tiên
       user.cart[checkCart] = {
         ...user.cart[checkCart],
         quantity: user.cart[checkCart].quantity + 1,
       };
     } else {
-      //nếu có rồi thì cũng push vào và tăng giá trị lên một và không có gì thay đổi
       user.cart.push({ ...data, quantity: 1 });
     }
-
     let indexUser = userLocal.findIndex((item) => item.id == user.id);
     userLocal[indexUser] = user;
     localStorage.setItem("user", JSON.stringify(userLocal));

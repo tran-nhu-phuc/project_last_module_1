@@ -34,7 +34,8 @@
  /* prodcut_cart */
  .productCart {
      width: 60%;
-     height: 1000px;
+     height: auto;
+     max-height: 800px;
      padding: 30px;
      margin-left: 20%;
      row-gap: 20px;
@@ -134,4 +135,49 @@
 
  .textCart .textCart-2 span {
      color: blue;
+ }
+
+ .popUp {
+     width: 350px;
+     height: 100px;
+     background-color: rgb(245, 245, 247);
+     color: black;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     display: flex;
+     padding: 15px;
+     column-gap: 30px;
+     justify-content: space-between;
+     border-radius: 20px;
+     z-index: 1000;
+     position: fixed;
+     top: 10%;
+     right: 1%;
+     display: none;
+ }
+
+ .popUp .content {
+     font-size: 17px;
+     margin-top: 15px;
+     text-align: center;
+ }
+
+ .popUp {
+     animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+
+ @keyframes slide-right {
+     0% {
+         transform: translateX(500px);
+     }
+
+     100% {
+         transform: translateX(0);
+     }
+ }
+
+ #upStrong {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }

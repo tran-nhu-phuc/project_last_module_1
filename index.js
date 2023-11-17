@@ -14,7 +14,7 @@ function getRenderNameUser() {
   if (local.name == undefined) {
     document.querySelector(
       ".menu-list-small-6"
-    ).innerHTML = `<a href="./pages/user/login/login.html">Chưa đăng nhập</a>`;
+    ).innerHTML = `<a href="http://127.0.0.1:5500/pages/user/login/login.html"><i class="fa-solid fa-user" style="font-size:20px"></i></a>`;
   }
 }
 function logout() {

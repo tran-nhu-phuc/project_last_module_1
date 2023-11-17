@@ -425,7 +425,6 @@ let product = [
 if (!JSON.parse(localStorage.getItem("product_new"))) {
   localStorage.setItem("product_new", JSON.stringify(product));
 }
-// // localStorage.setItem("product_new", JSON.stringify(product));
 
 // let login = [
 //   {

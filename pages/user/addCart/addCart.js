@@ -20,7 +20,7 @@ function RenderAddCart() {
                 />
               </div>
               <div class="contentProduct">
-                <a href="#">MacBook Air 15 inch với chip M2 - Đêm Xanh Thẳm</a>
+                <a href="#">${element.name}</a>
                 <p>
                   Thanh toán 1.67% lãi suất thực trong 24 tháng sau khi thanh
                   toán lần đầu 20% là 6.600.000đ.
@@ -31,12 +31,12 @@ function RenderAddCart() {
                 ></a>
               </div>
               <div class="countProduct">
-                <strong>${element.quantity}<i class="fa-solid fa-chevron-down"></i></strong>
+                <strong id="upStrong"><i class="fa-solid fa-chevron-up" onclick="cherryUp(${element.id})"></i>${element.quantity}<i class="fa-solid fa-chevron-down"onclick="cherryDown(${element.id})" ></i></strong>
               </div>
               <div class="priceProduct">
-                <strong>32.999.000đ</strong>
+                <strong>${element.cost}</strong>
                 <span>1.344.000đ/tháng*</span>
-                <a href="#">Xóa</a>
+                <a onclick="deleteProduct(${element.id})" style=" cursor: pointer;">Xóa</a>
               </div>
             </div>
             <div class="textCart">
@@ -67,4 +67,114 @@ function RenderAddCart() {
       `;
   });
   document.querySelector("#totalPrice").innerHTML = totalPrice.toLocaleString();
+}
+// tăng sản phẩm
+function cherryUp(id) {
+  let getUser = getAllItems("user");
+  let getUserLogin = getAllItems("userLogin");
+  let user = getUser.find((item) => {
+    return item.id == getUserLogin.id;
+  });
+  let userCart = user.cart.findIndex((element) => {
+    return element.id == id;
+  });
+  user.cart[userCart] = {
+    ...user.cart[userCart],
+    quantity: user.cart[userCart].quantity + 1,
+  };
+  if (user.cart[userCart].quantity > user.cart[userCart].stock) {
+    document.getElementById("popUp").style.display = "block";
+    setTimeout(popUp, 3000);
+  } else {
+    let indexUser = getUser.findIndex((item) => {
+      return item.id == user.id;
+    });
+    getUser[indexUser].cart = user.cart;
+    localStorage.setItem("user", JSON.stringify(getUser));
+    RenderAddCart();
+  }
+}
+//giảm sản phẩm
+function cherryDown(id) {
+  let getUser = getAllItems("user");
+  let getUserLogin = getAllItems("userLogin");
+  let user = getUser.find((item) => {
+    return item.id == getUserLogin.id;
+  });
+  let userCart = user.cart.findIndex((element) => {
+    return element.id == id;
+  });
+  if (user.cart[userCart].quantity > 1) {
+    user.cart[userCart] = {
+      ...user.cart[userCart],
+      quantity: user.cart[userCart].quantity - 1,
+    };
+  }
+  let indexUser = getUser.findIndex((item) => {
+    return item.id == user.id;
+  });
+  getUser[indexUser].cart = user.cart;
+  localStorage.setItem("user", JSON.stringify(getUser));
+  RenderAddCart();
+}
+
+function deleteProduct(id) {
+  let getUser = getAllItems("user");
+  let getUserLogin = getAllItems("userLogin");
+  let cof = confirm("are you sure wanna delete?");
+  if (cof) {
+    let user = getUser.findIndex((item) => {
+      return item.id == getUserLogin.id;
+    });
+    let userCart = getUser[user].cart.findIndex((element) => {
+      return element.id == id;
+    });
+    let resultFilter = getUser[user].cart.filter((item) => {
+      return item.id != getUser[user].cart[userCart].id;
+    });
+    getUser[user].cart = resultFilter;
+    let result = getUser.map((item, index) => {
+      if (index == user) {
+        return {
+          ...getUser[user],
+        };
+      }
+      return item;
+    });
+    localStorage.setItem("user", JSON.stringify(result));
+  }
+  RenderAddCart();
+  window.location.reload();
+}
+
+function deleteProduct(id) {
+  let getUser = getAllItems("user");
+  let getUserLogin = getAllItems("userLogin");
+  let cof = confirm("are you sure wanna delete?");
+  if (cof) {
+    let user = getUser.findIndex((item) => {
+      return item.id == getUserLogin.id;
+    });
+    let userCart = getUser[user].cart.findIndex((element) => {
+      return element.id == id;
+    });
+    let resultFilter = getUser[user].cart.filter((item) => {
+      return item.id != getUser[user].cart[userCart].id;
+    });
+    getUser[user].cart = resultFilter;
+    let result = getUser.map((item, index) => {
+      if (index == user) {
+        return {
+          ...getUser[user],
+        };
+      }
+      return item;
+    });
+    localStorage.setItem("user", JSON.stringify(result));
+  }
+  RenderAddCart();
+}
+function popUp() {
+  const popUpContent = document.getElementById("popUp");
+  popUpContent.style.display = "none";
 }

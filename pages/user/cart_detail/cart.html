@@ -9,7 +9,6 @@
       type="image/x-icon"
       href="https://e7.pngegg.com/pngimages/991/940/png-clipart-apple-logo-apple-heart-logo.png"
     />
-    <link rel="stylesheet" href="../../../base.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,7 +21,12 @@
       rel="stylesheet"
       href="../../../components/user_component/header/header_screen.css"
     />
-    <link rel="stylesheet" href="./register.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="../../../components/user_component/footer/footer.css"
+    />
   </head>
   <body>
     <header>
@@ -373,17 +377,14 @@
                 <i
                   class="fa-solid fa-bag-shopping"
                   data-cart="0"
-                  onclick="window.location.href='./addCart.html'"
+                  onclick="window.location.href='../addCart/addCart.html'"
                   id="data-cart"
                 ></i>
               </li>
               <li class="menu-list-small-5">
                 <i class="fa-solid fa-bars"></i>
               </li>
-              <li
-                class="menu-list-small-6"
-                onclick="window.location.href='../login/login.html'"
-              >
+              <li class="menu-list-small-6">
                 <i class="fa-solid fa-user"></i>
               </li>
             </ul>
@@ -391,56 +392,177 @@
         </div>
       </nav>
     </header>
-    <form>
-      <div class="main">
-        <h2><i class="fa-brands fa-apple"></i></h2>
-        <input type="text" placeholder="your full name" id="fulname" max="40" />
-        <input
-          type="number"
-          placeholder="your number"
-          id="number"
-          max="10"
-          min="8"
-        />
-        <input
-          type="email"
-          placeholder="your email"
-          id="email"
-          max="50"
-          min="15"
-        />
-        <input
-          type="password"
-          placeholder="password"
-          id="password"
-          min="8"
-          max="30"
-        />
-        <input
-          type="password"
-          placeholder="password again"
-          id="passwordagain"
-          min="8"
-          max="30"
-        />
-        <button onclick="getRegister()">Create</button>
-
-        <a href="../login/login.html" style="text-decoration: none">Login</a>
+    <main id="container_detail_card">
+      <section class="section-1">
+        <div class="section-1-div-1">
+          <span>Mới</span>
+          <strong>Mua iPhone 15 Pro</strong>
+          <p>
+            Giới hạn 6 chiếc iPhone 15 Pro và 6 chiếc iPhone 15 Pro Max cho mỗi
+            khách hàng.
+          </p>
+          <p>Từ 34.999.000đ hoặc 1.425.000đ/thángmỗi tháng trong 24 tháng*</p>
+          <p>
+            Trả góp theo tháng với lãi suất 1.67%, sau khi thanh toán lần đầu
+            20%.
+          </p>
+        </div>
+        <div class="section-1-div-2">
+          <span
+            >Nhận 600.000đ-25.200.000đ.** <i class="fa-solid fa-plus"></i
+          ></span>
+        </div>
+      </section>
+      <section class="section-2"></section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-1">
+          <p>Apple TV+ yêu cầu đăng ký thuê bao.</p>
+        </div>
+        <div class="footer-2">
+          <div class="footer-2-menu-1">
+            <ul class="footer-list-1">
+              <li><strong>Mua Sắm Và Tìm Hiểu</strong></li>
+              <li>Cửa Hàng</li>
+              <li>Mac</li>
+              <li>iPac</li>
+              <li>iPhone</li>
+              <li>Watch</li>
+              <li>AirPods</li>
+              <li>TV & Nhà</li>
+              <li>AirTag</li>
+              <li>Phụ Kiện</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li><strong>Ví Apple</strong></li>
+              <li>Ví</li>
+              <li>Apple Pay</li>
+            </ul>
+          </div>
+          <div class="footer-2-menu-2">
+            <ul class="footer-list-1">
+              <li><strong>Tài khoản</strong></li>
+              <li>Tài Khoản</li>
+              <li>Quản Lý ID Apple Của Bạn</li>
+              <li>Tài Khoản Apple Store</li>
+              <li>iCloud.com</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li><strong>Apple One</strong></li>
+              <li>Apple TV+</li>
+              <li>Apple Music</li>
+              <li>Apple Arcade</li>
+              <li>Apple Podcasts</li>
+            </ul>
+          </div>
+          <div class="footer-2-menu-3">
+            <ul class="footer-list-1">
+              <li><strong>Apple Store</strong></li>
+              <li>Ứng Dụng Apple Store</li>
+              <li>Apple Trade In</li>
+              <li>Tài Chính</li>
+              <li>Tình Trang Đơn Hàng</li>
+              <li>Hỗ Trợ Mua Hàng</li>
+            </ul>
+          </div>
+          <div class="footer-2-menu-4">
+            <ul class="footer-list-1">
+              <li><strong>Dành Cho Danh Nghiệp</strong></li>
+              <li>Apple Và Danh Nghiệp</li>
+              <li>Mua Hàng Cho Danh Nghiệp</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li><strong>Cho Giáo Dục</strong></li>
+              <li>Apple Và Giáo Dục</li>
+              <li>Mua Hàng Cho Bậc Đại Học</li>
+            </ul>
+            <ul class="footer-list-3">
+              <li><strong>Cho Chăm Sóc Sức Khỏe</strong></li>
+              <li>Apple Trong Chăm Sóc Sức Khỏe</li>
+              <li>Sức Khỏe Trên Apple Watch</li>
+            </ul>
+          </div>
+          <div class="footer-2-menu-5">
+            <ul class="footer-list-1">
+              <li><strong>Giá Trị Cốt Lõi Của Apple</strong></li>
+              <li>Trợ Năng</li>
+              <li>Môi Trường</li>
+              <li>Quyền Riêng Tư</li>
+              <li>Trách Nhiệm Nhà Cung Cấp</li>
+            </ul>
+            <ul class="footer-list-2">
+              <li><strong>Về Apple</strong></li>
+              <li>Newscroom</li>
+              <li>Lãnh Đạo Của Apple</li>
+              <li>Nhà Đầu Tư</li>
+              <li>Đạo Đức & Quy Tắc</li>
+              <li>Sự Kiện</li>
+              <li>Liên Hệ Apple</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-3">
+          <div class="footer-3-div-1">
+            <p>
+              Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần
+              bạn. Hoặc goi 18001192.
+            </p>
+          </div>
+          <div class="footer-3-div-2">
+            <div class="footer-3-div-2-div-1">
+              <p>Bản quyền © Apple Inc. 2023 Bảo lưu mọi quyền.</p>
+              <p>Việt Nam</p>
+            </div>
+            <div class="footer-3-div-2-div-2">
+              <p>Chính Sách Quyền Riêng Tư</p>
+              <p>Điều Khoản Sử Dụng</p>
+              <p>Bán Hàng Và Hoàn Tiền</p>
+              <p>Pháp Lý</p>
+              <p>Bản Đồ Trang Wed</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-4">
+          <div class="footer-4-div-1">
+            <p>Công Ty TNHH Apple Việt Nam</p>
+            <p>
+              ĐKKD số 0313510827, do Sở KH&ĐT thành phố Hồ Chí Minh cấp ngày 28
+              tháng 10 năm 2015
+            </p>
+            <p>
+              Giấy phép kinh doanh số 0313510827/KD-0137 do Sở Công Thương thành
+              phố Hồ Chí Minh cấp ngày 23 tháng 5 năm 2018
+            </p>
+            <p>
+              Địa chỉ: Phòng 901, Ngôi Nhà Đức Tại Tp. Hồ Chí Minh, số 33, đường
+              Lê Duẩn, Phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam.
+            </p>
+            <p>Điện thoại:1800 1192</p>
+          </div>
+          <div class="footer-4-div-2">
+            <img
+              src="https://www.apple.com/vn/home/globalfooter/logo-local-compliance.png"
+              alt="logoVN"
+            />
+          </div>
+        </div>
       </div>
-    </form>
+    </footer>
   </body>
-  <script src="../../../roponsitory/repository.js"></script>
+  <script src="../../../models/productsDB.js"></script>
   <script src="../../../services/users_services.js"></script>
-  <script src="../../../models/usersDB.js"></script>
-  <script src="./register.js"></script>
+  <script src="../../../roponsitory/repository.js"></script>
   <script src="../../../index.js"></script>
+  <script src="../historyUser/hisory.js"></script>
+  <script src="../payment/payment.js"></script>
   <script src="../shop/shop.js"></script>
+  <script src="./cart.js"></script>
   <script>
     getRenderNameUser();
+    renderCart();
+    renderProduct();
+    renderProductPayMent();
+    renderCartNumber();
   </script>
 </html>
-<style>
-  .header {
-    padding-top: 10px;
-  }
-</style>
