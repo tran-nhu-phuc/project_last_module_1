@@ -8,10 +8,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="../dashboard/aside.css" />
-    <link rel="stylesheet" href="./product.css" />
     <link rel="stylesheet" href="../../../base.css" />
-    <style></style>
+    <link rel="stylesheet" href="../dashboard/aside.css" />
+    <link rel="stylesheet" href="./order.css" />
   </head>
   <body>
     <aside>
@@ -61,24 +60,35 @@
           <input type="search" placeholder="tìm kiếm người dùng " />
           <button>tìm kiếm</button>
         </div>
-        <div class="addNew">
-          <button onclick="addNew()">Thêm mới</button>
+      </section>
+      <section class="editOrder" id="editOrder">
+        <!-- editOrder input -->
+      </section>
+      <section class="table" id="table_list">
+        <!-- renter table -->
+      </section>
+      <section class="containerOrder" id="containerOrder">
+        <div class="contentHeader">
+          <span>Ảnh sản phẩm</span>
+          <span>Tên sản phẩm</span>
+          <span>Số lượng</span>
+          <span>ID sản phẩm</span>
+          <span
+            >Tổng tiền
+            <label
+              onclick="clockAlertProduct()"
+              style="margin-left: 25px; color: rgb(192, 186, 186)"
+              >x</label
+            ></span
+          >
         </div>
-      </section>
-      <section class="action-add-new" id="addNewCreate">
-        <!-- addNew -->
-      </section>
-      <section class="addEdit" id="addEditNew"></section>
-      <section class="table" id="table_id">
-        <!-- <table>
-        </table> -->
+        <div class="productOrderAlert" id="productOrderAlert"></div>
       </section>
     </main>
-    <script src="./product.js"></script>
-    <script src="../userAdmin/userAdmin.js"></script>
   </body>
-  <script>
-    resultProduct();
-  </script>
+  <script src="./order.js"></script>
+  <script src="../../../roponsitory/repository.js"></script>
+  <script src="../../../models/ordersDB.js"></script>
+  <script src="../../../models/productsDB.js"></script>
+  <script></script>
 </html>
-<style></style>

@@ -12,6 +12,10 @@
      background-color: #ffff;
  }
 
+ body {
+     position: relative;
+ }
+
  /* a */
 
  /* b */

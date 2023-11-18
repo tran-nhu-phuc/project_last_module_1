@@ -27,7 +27,7 @@ function addNew() {
   document.querySelector("body").style.overflowY = "hidden";
   document.querySelector("main").style.backgroundColor = "#979595";
 }
-function result() {
+function resultProduct() {
   let local = JSON.parse(localStorage.getItem("product_new"));
   let table = "<table>";
   table +=
@@ -48,14 +48,14 @@ function result() {
              <td>${local[i].stock}</td>
              <td><img src="../../../${local[i].image}" alt="iphone 15"  style="width: 80px; height: 80px"></td>
              <td>${local[i].category}</td>
-             <td><button onclick="edit(${i})" id='addEdit'>edit</button></td>
+             <td><button onclick="editProduct(${i})" id='addEdit'>edit</button></td>
              <td><button onclick="delete_product(${i})" id='addDelete'>delete</button></td>
           </tr>`;
   }
   table += "</table>";
   document.getElementById("table_id").innerHTML = table;
 }
-result();
+resultProduct();
 function add() {
   let local = JSON.parse(localStorage.getItem("product_new"));
   let name = document.getElementById("NameProduct").value;
@@ -85,7 +85,7 @@ function add() {
     alert("fill up");
   }
   localStorage.setItem("product_new", JSON.stringify(local));
-  result(local);
+  resultProduct(local);
 }
 function cancelEdit() {
   document.getElementById("addEditNew").style.display = "none";
@@ -96,7 +96,7 @@ function cancelNew() {
   document.querySelector("body").style.overflowY = "auto";
   document.querySelector("main").style.backgroundColor = "#ffff";
 }
-function edit(index) {
+function editProduct(index) {
   let local = JSON.parse(localStorage.getItem("product_new"));
   document.getElementById("addEditNew").innerHTML =
     `<input type="text" value="${local[index].id}" id="EMXP" title="Nhập mã sản phẩm"/>` +
@@ -121,7 +121,7 @@ function clickEdit(index) {
   local[index].haveProduct = editHaveProduct;
   local[index].imgLink = editLinkImage;
   localStorage.setItem("product_new", JSON.stringify(local));
-  result(local);
+  resultProduct(local);
 }
 function delete_product(index) {
   let check = confirm("are you sure wanna delete?");
@@ -129,6 +129,6 @@ function delete_product(index) {
     let local = JSON.parse(localStorage.getItem("product_new"));
     local.splice(index, 1);
     localStorage.setItem("product_new", JSON.stringify(local));
-    result(local);
+    resultProduct(local);
   }
 }

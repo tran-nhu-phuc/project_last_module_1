@@ -1,28 +1,3 @@
-let arr = [
-  {
-    id: 1,
-    nameLogin: 1,
-    name: "a",
-    email: 1,
-    role: 1,
-    date: 1,
-    action: false,
-  },
-  {
-    id: 1,
-    nameLogin: 1,
-    email: 1,
-    name: "a",
-    role: 1,
-    date: 1,
-    action: false,
-  },
-];
-// localStorage.setItem("user", JSON.stringify(arr));
-// if (!JSON.parse(localStorage.getItem("user"))) {
-//   localStorage.setItem("user", JSON.stringify(arr));
-// }
-
 function renderUser() {
   let local = JSON.parse(localStorage.getItem("user"));
   let table = "<table>";
@@ -63,7 +38,6 @@ function editUser(index) {
   document.getElementById("editUser").style.display = "block";
   document.querySelector("body").style.overflowY = "hidden";
   document.querySelector("body").style.backgroundColor = "#979595";
-  // document.querySelector("body").style.zIndex = "1000";
 }
 function edit(index) {
   const getUser = getAllItems("user");
