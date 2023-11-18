@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <input type="text" placeholder="Nhập tên sản phẩm" />
+        <input type="text" placeholder="Nhập giá" />
+        <input type="text" placeholder="Nhập số lượng" />
+        <input type="text" placeholder="Nhập số link ảnh sản phẩm" />
+        <input type="text" placeholder="Nhập Loại sản phẩm" />
+        <div class="buttonEdit">
+          <input type="button" value="Edit" />
+          <input type="button" value="Cancel" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<style>
+  body {
+    position: relative;
+  }
+  .container {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    position: fixed;
+    top: 28%;
+    left: 42%;
+    z-index: 1000;
+  }
+  .container input {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .buttonCreate input:nth-child(1) {
+    background-color: orange;
+    color: #fff;
+  }
+  .buttonCreate input:nth-child(2) {
+    border: 1px solid rgb(126, 126, 241);
+    background-color: #ffff;
+  }
+</style>

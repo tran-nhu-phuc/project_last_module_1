@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./aside.css" />
     <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
     <link rel="stylesheet" href="../../../base.css" />
   </head>
   <body>
@@ -55,78 +55,50 @@
         </li>
       </ul>
     </aside>
-    <header>
-      <nav>
-        <div class="menu">
-          <div class="menu-a">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-b">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-c">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-d">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-e">
-            <h3>Applications</h3>
-          </div>
-        </div>
-        <div class="next-menu">
-          <div class="next-menu-a">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-b">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-c">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-d">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-        </div>
-      </nav>
-    </header>
     <main>
-      <section class="grid-a"></section>
-      <section class="grid-b">
+      <section class="weeklySales">
+        <h2>Weekly Sales Stats</h2>
+        <p>890,344 Sales</p>
+        <div class="imageSales" id="imageSales"></div>
+      </section>
+      <section class="newUser">
         <div class="text-grid-large">
           <div class="new-arrivals">
-            <h2>New Arrivals</h2>
+            <h2>New User</h2>
             <p>More than 400+ new members</p>
           </div>
           <div class="new-arrivals-button">
             <button>New Report</button>
           </div>
         </div>
-        <div class="table">
-          <table>
-            <tr>
-              <th>
-                <input type="checkbox" id="checkbox" placeholder="..." />
-              </th>
-              <th>ORDER ID</th>
-              <th>COUNTRY</th>
-              <th>Date</th>
-              <th>STATUS</th>
-              <th>ACTION</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-            </tr>
-          </table>
+        <div class="newUser">
+          <div class="listUser">
+            <div class="user">
+              <h4>Name</h4>
+              <h4>Email</h4>
+              <h4>Phone</h4>
+              <h4>Date</h4>
+            </div>
+          </div>
         </div>
       </section>
       <section class="grid-c"></section>
-      <section class="grid-d"></section>
+      <section class="chartProduct">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="371"
+          height="116"
+          viewBox="0 0 371 116"
+          fill="none"
+        >
+          <path
+            d="M54.7692 59.5H-11V161.5H378V70.5H362.97C349.665 70.5 336.908 65.1969 327.524 55.7646L288.695 16.7354C279.311 7.3031 266.554 2 253.249 2H153.547C140.241 2 127.485 7.3031 118.101 16.7354L90.215 44.7646C80.831 54.1969 68.0744 59.5 54.7692 59.5Z"
+            fill="#C9F7F5"
+            stroke="#1BC5BD"
+            stroke-width="3"
+          />
+        </svg>
+      </section>
       <section class="grid-e">
         <div class="text-grid-e">
           <h2>Weekly Sales Stats</h2>
@@ -147,5 +119,37 @@
       </section>
     </main>
   </body>
+  <script src="./dashboard.js"></script>
+  <script src="../../../roponsitory/repository.js"></script>
+  <script src="../../../models/ordersDB.js"></script>
+  <script>
+    renderProduct();
+  </script>
 </html>
-<style></style>
+<style>
+  .weeklySales {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageSales {
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .productOrders {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .productOrders img {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>

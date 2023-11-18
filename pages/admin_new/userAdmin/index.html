@@ -8,11 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="../dashboard/aside.css" />
-    <link rel="stylesheet" href="../dashboard/header.css" />
-    <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="../../../base.css" />
-    <style></style>
+    <link rel="stylesheet" href="../dashboard/header.css" />
+    <link rel="stylesheet" href="../dashboard/aside.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <aside>
@@ -56,60 +55,24 @@
         </li>
       </ul>
     </aside>
-    <header>
-      <nav>
-        <div class="menu">
-          <div class="menu-a">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-b">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-c">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-d">
-            <h3>Applications</h3>
-          </div>
-          <div class="menu-e">
-            <h3>Applications</h3>
-          </div>
-        </div>
-        <div class="next-menu">
-          <div class="next-menu-a">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-b">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-c">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-          <div class="next-menu-d">
-            <img src="./Cart#3.svg" alt="logo" />
-          </div>
-        </div>
-      </nav>
-    </header>
     <main>
       <section class="search">
         <div class="button-search">
           <input type="search" placeholder="tìm kiếm người dùng " />
           <button>tìm kiếm</button>
         </div>
-        <div class="addNew">
-          <button onclick="addNew()">Thêm mới</button>
-        </div>
       </section>
-      <section class="action-add-new" id="add">
-        <!-- addNew -->
+      <section class="editUser" id="editUser">
+        <!-- editUser input -->
       </section>
-      <section class="table" id="table_id">
-        <!-- <table>
-        </table> -->
-      </section>
+      <section class="table" id="table_list"></section>
     </main>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
+    <script src="../../../roponsitory/repository.js"></script>
+    <script src="../../../models/productsDB.js"></script>
+    <script>
+      renderUser();
+    </script>
   </body>
 </html>
 <style></style>

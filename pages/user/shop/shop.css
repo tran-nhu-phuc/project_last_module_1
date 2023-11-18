@@ -208,7 +208,7 @@ main .section-11 span {
 }
 
 
-.menu-list-small-6 .fa-user:hover {
+/* .menu-list-small-6 .fa-user:hover {
     animation: user 2s infinite alternate-reverse;
 }
 
@@ -236,16 +236,9 @@ main .section-11 span {
     0% {
         color: darkgray;
     }
-}
+} */
 
-
-
-
-
-
-
-/*  */
-.fa-bag-shopping {
+/* .fa-bag-shopping {
     margin: 0 50px;
     position: relative;
     font-size: 30px;
@@ -254,7 +247,6 @@ main .section-11 span {
 .fa-bag-shopping::after {
     position: absolute;
     content: attr(data-cart);
-    /* get data từ thuộc tính data-cart trong thẻ html */
     font-size: 10px;
     width: 30px;
     height: 30px;
@@ -273,17 +265,15 @@ main .section-11 span {
 
 .menu-list-small-4:hover {
     animation: example 0.6s infinite alternate-reverse;
-}
+} */
 
-@keyframes example {
+/* @keyframes example {
     from {
         transform: translateY(5px);
-        /* transform: translateX(10px); */
     }
 
     to {
         transform: translateY(-5px);
-        /* transform: translateX(0px); */
     }
 
     100% {
@@ -305,46 +295,8 @@ main .section-11 span {
     0% {
         color: darkgray;
     }
-}
+} */
 
-/* .menu-list-small-1{
-    animation: apple 1s  infinite alternate-reverse;
-  }
-  @keyframes apple{
-    100%{
-      color: aqua;
-    }
-    90%{
-      color: rebeccapurple;
-    }
-    80%{
-      color: red;
-    }
-    70%{
-      color: aquamarine;
-    }
-    60%{
-      color: blue;
-    }
-    50%{
-      color: chartreuse;
-    }
-    40%{
-      color: aliceblue;
-    }
-    30%{
-      color: brown;
-    }
-    20%{
-      color: #000;
-    }
-    10%{
-      color: fuchsia;
-    }
-    0%{
-      color: darkgray;
-    }
-  } */
 .section-4 {
     display: flex;
     margin-top: 30px;

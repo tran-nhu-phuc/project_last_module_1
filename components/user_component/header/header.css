@@ -106,9 +106,13 @@ header .header-nav-menu .header-nav-menu-box .menu-list-small-5 {
     display: none;
 }
 
+.menu-list-small-3 i {
+    padding: 0 10px;
+}
+
 .menu-list-small-3 i:hover .background {
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 0;
     right: 0;
     display: block;
