@@ -159,3 +159,16 @@ body {
 }
 
 .productOrderAlert {}
+
+.setSub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+
+.logoutAdmin {
+    padding: 20px 20px;
+    background-color: #ffff;
+}

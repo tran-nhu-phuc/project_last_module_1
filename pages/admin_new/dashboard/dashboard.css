@@ -102,3 +102,45 @@
      font-size: 17px;
      background-color: rgb(27, 197, 189);
  }
+
+ .setSub {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     cursor: pointer;
+     display: none;
+ }
+
+ .logoutAdmin {
+     padding: 20px 20px;
+     background-color: #ffff;
+ }
+
+ .weeklySales {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .imageSales {
+     width: 100%;
+     flex: 1;
+     height: 100%;
+     overflow-y: scroll;
+ }
+
+ .productOrders {
+     display: flex;
+     height: 100px;
+     width: 100%;
+     justify-content: space-between;
+     text-align: center;
+     padding: 10px;
+     border-bottom: 1px solid black;
+     align-items: center;
+ }
+
+ .productOrders img {
+     width: 30%;
+     height: 100%;
+     object-fit: contain;
+ }

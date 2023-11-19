@@ -382,8 +382,16 @@
                 <i class="fa-solid fa-magnifying-glass">
                   <div class="background">
                     <div class="search">
-                      <input type="search" placeholder="search" />
+                      <input
+                        type="search"
+                        placeholder="search"
+                        id="search"
+                        oninput="searProductData()"
+                      />
                       <button>search</button>
+                    </div>
+                    <div class="listProductSearch" id="listProductSearch">
+                      <div class="product-search" id="product-search"></div>
                     </div>
                   </div>
                 </i>

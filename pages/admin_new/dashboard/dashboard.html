@@ -21,14 +21,14 @@
           /></a>
         </li>
         <li class="aside-a" title="dashboard">
-          <a href="./dashboard.html">
+          <a href="#">
             <i
               class="fa-solid fa-bars-progress"
               style="font-size: 25px; color: #ffff"
             ></i
           ></a>
         </li>
-        <li class="aside-b" title="product">
+        <li class="aside-a" title="product">
           <a href="../management_product/product.html"
             ><i
               class="fa-brands fa-product-hunt"
@@ -36,7 +36,7 @@
             ></i
           ></a>
         </li>
-        <li class="aside-c" title="order">
+        <li class="aside-a" title="order">
           <a href="../orderAdmin/order.html"
             ><i
               class="fa-solid fa-store"
@@ -44,7 +44,7 @@
             ></i
           ></a>
         </li>
-        <li class="aside-d" title="user">
+        <li class="aside-a" title="user">
           <a href="../userAdmin/userAdmin.html"
             ><i
               class="fa-solid fa-user"
@@ -52,6 +52,17 @@
             ></i
           ></a>
         </li>
+        <li class="aside-a" title="set" id="setProduct">
+          <a href="#"
+            ><i
+              class="fa-solid fa-gear"
+              style="font-size: 25px; color: #ffff"
+            ></i>
+          </a>
+        </li>
+        <div class="setSub">
+          <div class="logoutAdmin">Logout</div>
+        </div>
       </ul>
     </aside>
     <main>
@@ -122,33 +133,6 @@
   <script src="../../../roponsitory/repository.js"></script>
   <script src="../../../models/ordersDB.js"></script>
   <script>
-    renderProduct();
+    renderAll();
   </script>
 </html>
-<style>
-  .weeklySales {
-    display: flex;
-    flex-direction: column;
-  }
-  .imageSales {
-    width: 100%;
-    flex: 1;
-    height: 100%;
-    overflow-y: scroll;
-  }
-  .productOrders {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-    padding: 10px;
-    border-bottom: 1px solid black;
-    align-items: center;
-  }
-  .productOrders img {
-    width: 30%;
-    height: 100%;
-    object-fit: contain;
-  }
-</style>

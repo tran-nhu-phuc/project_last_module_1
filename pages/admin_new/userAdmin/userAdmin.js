@@ -9,7 +9,7 @@ function renderUser() {
     "<th>Tên người dùng</th>" +
     "<th>Vai trò</th>" +
     "<th>Trạng thái</th>" +
-    "<th colspan='2'>Hành dộng</th>";
+    "<th colspan=`2`>Hành dộng</th>";
   ("</tr>");
   for (let i = 0; i < local.length; i++) {
     if (local[i].role == 2) {
@@ -28,9 +28,9 @@ function renderUser() {
                 <td>${local[i].name}</td>
                 <td>${checkUser}</td>
                 <td>${checkStatusUser}</td>
-                <td><button onclick="editUser(${i})" style="padding: 10px 20px
+                <td><button onclick="editUser(${i})" style="padding: 10px 15px
 ;background-color:orange; border-radius:10px;color:#ffff ">Edit</button></td>
-                <td><button onclick="deleteUser(${i})" style="padding: 10px 20px
+                <td><button onclick="deleteUser(${i})" style="padding: 10px 15px
 ;background-color:red; border-radius:10px;color:#ffff">Delete</button></td>
             </tr>`;
   }
@@ -79,3 +79,13 @@ function deleteUser(index) {
   }
   renderUser();
 }
+document.getElementById("setProduct").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "block";
+});
+document.querySelector("main").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "none";
+});
+document.querySelector(".setSub").addEventListener("click", function () {
+  window.location.href = "../LoginAdmin/login.html";
+  JSON.parse(localStorage.removeItem("LoginAdmin"));
+});

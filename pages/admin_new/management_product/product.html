@@ -29,7 +29,7 @@
             ></i
           ></a>
         </li>
-        <li class="aside-b" title="product">
+        <li class="aside-a" title="product">
           <a href="../management_product/product.html"
             ><i
               class="fa-brands fa-product-hunt"
@@ -37,7 +37,7 @@
             ></i
           ></a>
         </li>
-        <li class="aside-c" title="order">
+        <li class="aside-a" title="order">
           <a href="../orderAdmin/order.html"
             ><i
               class="fa-solid fa-store"
@@ -45,7 +45,7 @@
             ></i
           ></a>
         </li>
-        <li class="aside-d" title="user">
+        <li class="aside-a" title="user">
           <a href="../userAdmin/userAdmin.html"
             ><i
               class="fa-solid fa-user"
@@ -53,6 +53,17 @@
             ></i
           ></a>
         </li>
+        <li class="aside-a" title="set" id="setProduct">
+          <a href="#"
+            ><i
+              class="fa-solid fa-gear"
+              style="font-size: 25px; color: #ffff"
+            ></i>
+          </a>
+        </li>
+        <div class="setSub">
+          <div class="logoutAdmin">Logout</div>
+        </div>
       </ul>
     </aside>
     <main>
@@ -69,7 +80,7 @@
         <!-- addNew -->
       </section>
       <section class="addEdit" id="addEditNew"></section>
-      <section class="editUser" id="editUser">
+      <section class="editProduct" id="editProduct">
         <!-- editUser input -->
       </section>
       <section class="table" id="table_id">
@@ -78,10 +89,10 @@
       </section>
     </main>
     <script src="./product.js"></script>
-    <script src="../userAdmin/userAdmin.js"></script>
+    <script src="../../../models/productsDB.js"></script>
+    <script src="../../../roponsitory/repository.js"></script>
   </body>
   <script>
     resultProduct();
   </script>
 </html>
-<style></style>

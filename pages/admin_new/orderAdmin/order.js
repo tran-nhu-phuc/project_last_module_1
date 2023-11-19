@@ -107,10 +107,31 @@ function viewProduct(i) {
   document.querySelector("body").style.overflowY = "hidden";
   document.querySelector("body").style.backgroundColor = "#979595";
   document.querySelector("body").style.zIndex = 1000;
+  document.querySelector(".table").backgroundColor = "#979595";
 }
 function clockAlertProduct() {
   let container = document.getElementById("containerOrder");
   container.style.display = "none";
   document.querySelector("body").style.overflowY = "auto";
-  document.querySelector("body").style.backgroundColor = "#ffff";
+  document.querySelector("body").style.backgroundColor = "#f5f5f5";
+  document.querySelector(".table").backgroundColor = "#ffff";
 }
+document.getElementById("setProduct").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "block";
+});
+document.querySelector("main").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "none";
+});
+document.querySelector(".setSub").addEventListener("click", function () {
+  window.location.href = "../LoginAdmin/login.html";
+});
+document.getElementById("setProduct").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "block";
+});
+document.querySelector("main").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "none";
+});
+document.querySelector(".setSub").addEventListener("click", function () {
+  window.location.href = "../LoginAdmin/login.html";
+  JSON.parse(localStorage.removeItem("LoginAdmin"));
+});

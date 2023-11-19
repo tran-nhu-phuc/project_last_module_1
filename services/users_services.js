@@ -15,7 +15,7 @@ class User {
   Login(email, password) {
     let localLogin = getAllItems("user");
     let checkLogin = localLogin.find((item) => {
-      return item.email === email && item.password === password;
+      return item.email == email && item.password == password;
     });
     if (checkLogin.status == 1) {
       return {

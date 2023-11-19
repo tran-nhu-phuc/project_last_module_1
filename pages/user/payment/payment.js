@@ -85,37 +85,18 @@ function enterBuy() {
       stock: product[item].stock - getUser[user].cart[index].quantity,
     };
   });
-  if (orders.length == 0) {
-    let object = {
-      cart: getUser[user].cart,
-      idOrder: 1,
-      idUser: getUser[user].id,
-      totalPrice: "total",
-      address: address.value,
-      phone: number.value,
-      status: 1,
-      date: dateUi,
-      payment: 1,
-    };
-    orders.push(object);
-    localStorage.setItem("orders", JSON.stringify(orders));
-  } else {
-    orders.forEach((item) => {
-      let object = {
-        cart: getUser[user].cart,
-        idOrders: orders[orders.length - 1].idOrder + 1,
-        idUser: getUser[user].id,
-        totalPrice: "total",
-        address: address.value,
-        phone: number.value,
-        status: 1,
-        date: dateUi,
-        payment: 1,
-      };
-      orders.push(object);
-      localStorage.setItem("orders", JSON.stringify(orders));
-    });
-  }
+  orders.push({
+    cart: getUser[user].cart,
+    idOrders: orders[orders.length - 1].idOrder + 1,
+    idUser: getUser[user].id,
+    totalPrice: "total",
+    address: address.value,
+    phone: number.value,
+    status: 1,
+    date: dateUi,
+    payment: 1,
+  });
+  localStorage.setItem("orders", JSON.stringify(orders));
   getUser[user].cart = [];
   localStorage.setItem("user", JSON.stringify(getUser));
   localStorage.setItem("product_new", JSON.stringify(product));

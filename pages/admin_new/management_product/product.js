@@ -16,7 +16,7 @@ function addNew() {
         <input type="text" placeholder="Tên Sản Phẩm" id="NameProduct"/>
         <input type="text" placeholder="Nhập Giá" id="CostProduct"/>
         <input type="text" placeholder="Nhập số Lượng" id="StockProduct"/>
-        <input type="text" placeholder="Nhập Link ảnh" id="imageProduct"/>
+        <input type="file" placeholder="Nhập Link ảnh" id="imageProduct" style="padding:25px 0"/>
         <input type="text" placeholder="Nhập Loại sản phẩm" id="KindProduct"/>
         <div class="buttonCreate">
           <input type="button" value="Create" onclick='add()' />
@@ -72,7 +72,8 @@ function add() {
   let cost = document.getElementById("CostProduct").value;
   let stock = document.getElementById("StockProduct").value;
   let kind = document.getElementById("KindProduct").value;
-  let image = document.getElementById("imageProduct").value;
+  let image = document.getElementById("imageProduct").files[0];
+  console.log(image);
   if (
     name !== "" &&
     cost !== "" &&
@@ -85,7 +86,7 @@ function add() {
       name: name,
       cost: cost,
       stock: stock,
-      image: image,
+      image: `../../../assets/product_new_product/${image.name}`,
       category: kind,
       status: 1,
     });
@@ -98,34 +99,36 @@ function add() {
   localStorage.setItem("product_new", JSON.stringify(local));
   resultProduct(local);
 }
-function cancelEdit() {
-  document.getElementById("addEditNew").style.display = "none";
-  location.reload();
-}
 function cancelNew() {
   document.getElementById("addNewCreate").style.display = "none";
   document.querySelector("body").style.overflowY = "auto";
-  document.querySelector("main").style.backgroundColor = "#ffff";
+  document.querySelector("body").style.backgroundColor = "#ffff";
 }
 function editProduct(index) {
   let local = JSON.parse(localStorage.getItem("product_new"));
-  document.getElementById("editUser").innerHTML = `<div class="container">
-        <input type="text" placeholder="${local[index].name}" id="ETSP"/>
-        <input type="text" placeholder="${local[index].cost}" id="EDG"/>
-        <input type="text" placeholder="${local[index].stock}" id="ETK"/>
-        <input type="text" placeholder="${local[index].category}" id="EK"/>
-        <input type="text" placeholder="${local[index].image}" id="EHA"/>
-        <input type="text" placeholder="${local[index].status}" id="ST"/>
+  document.getElementById("editProduct").innerHTML = `<div class="container">
+        <input type="text" value="${local[index].name}" id="ETSP"/>
+        <input type="text" value="${local[index].cost}" id="EDG"/>
+        <input type="text" value="${local[index].stock}" id="ETK"/>
+        <input type="text" value="${local[index].category}" id="EK"/>
+        <input type="text" value="${local[index].image}" id="EHA"/>
+        <input type="text" value="${local[index].status}" id="ST"/>
         <div class="buttonCreate">
           <input type="button" value="Edit" onclick='clickEdit(${index})' />
-          <input type="button" value="Cancel" onclick='cancelNew()'/>
+          <input type="button" value="Cancel" onclick='cancelEdit()'/>
         </div>
       </div>`;
-  document.getElementById("editUser").style.display = "block";
-  document.querySelector("body").style.overflowY = "hidden";
+  document.getElementById("editProduct").style.display = "block";
+  document.querySelector("body").style.overflow = "hidden";
   document.querySelector("body").style.backgroundColor = "#979595";
+  document.querySelector(".table").style.backgroundColor = "#979595";
 }
-
+function cancelEdit() {
+  document.getElementById("editProduct").style.display = "none";
+  document.querySelector("body").style.overflowY = "auto";
+  document.querySelector("body").style.backgroundColor = "#ffff";
+  location.reload();
+}
 function clickEdit(index) {
   let local = JSON.parse(localStorage.getItem("product_new"));
   let NameProduct = document.getElementById("ETSP").value;
@@ -134,28 +137,19 @@ function clickEdit(index) {
   let KindProduct = document.getElementById("EK").value;
   let ImageProduct = document.getElementById("EHA").value;
   let StatusProduct = document.getElementById("ST").value;
-  if (
-    NameProduct != "" ||
-    CostProduct != "" ||
-    StockProduct != "" ||
-    KindProduct != "" ||
-    ImageProduct != "" ||
-    StatusProduct != ""
-  ) {
-    local[index] = {
-      ...local[index],
-      name: NameProduct,
-      cost: CostProduct,
-      stock: StockProduct,
-      image: ImageProduct,
-      category: KindProduct,
-      status: StatusProduct,
-    };
-  } else {
-    local[index] = {
-      ...local[index],
-    };
-  }
+  local[index] = {
+    id: local[index].id,
+    name: NameProduct,
+    cost: CostProduct,
+    stock: StockProduct,
+    image: ImageProduct,
+    category: KindProduct,
+    status: StatusProduct,
+  };
+  document.getElementById("editProduct").style.display = "none";
+  document.querySelector("body").style.overflowY = "auto";
+  document.querySelector("body").style.backgroundColor = "#ffff";
+  document.querySelector(".table").style.backgroundColor = "#ffff";
   localStorage.setItem("product_new", JSON.stringify(local));
   resultProduct(local);
 }
@@ -171,3 +165,13 @@ function delete_product(index) {
     resultProduct(local);
   }
 }
+document.getElementById("setProduct").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "block";
+});
+document.querySelector("main").addEventListener("click", function () {
+  document.querySelector(".setSub").style.display = "none";
+});
+document.querySelector(".setSub").addEventListener("click", function () {
+  window.location.href = "../LoginAdmin/login.html";
+  JSON.parse(localStorage.removeItem("LoginAdmin"));
+});

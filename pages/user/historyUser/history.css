@@ -1,0 +1,66 @@
+ .header {
+     padding-top: 10px;
+ }
+
+ body {
+     position: relative;
+ }
+
+ .ordersDBProduct {
+     margin-top: 60px;
+ }
+
+ .boxOrders {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     border-radius: 15px;
+     margin-left: 25%;
+ }
+
+ .containerOrders {
+     width: 100%;
+     height: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 10px;
+     border-radius: 15px;
+     background-color: #ffff;
+     cursor: pointer;
+ }
+
+ .containerBoxProduct {
+     width: 80%;
+     height: 500px;
+     background-color: black;
+     position: fixed;
+     left: 10%;
+     top: 30%;
+     overflow-y: scroll;
+     display: none;
+ }
+
+ .item {
+     width: 100%;
+     height: 150px;
+     display: flex;
+     text-align: center;
+     background-color: #ffff;
+     border-bottom: 1px solid black;
+ }
+
+ .item>div {
+     width: 100%;
+     height: 100%;
+     color: black;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .item div img {
+     width: 80%;
+     height: 50%;
+     object-fit: contain;
+ }

@@ -146,6 +146,7 @@ table tr td {
 
 body {
     position: relative;
+    z-index: 10000;
 }
 
 .container {
@@ -188,4 +189,17 @@ body {
 #ETK,
 #EHA {
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.setSub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+
+.logoutAdmin {
+    padding: 20px 20px;
+    background-color: #ffff;
 }
