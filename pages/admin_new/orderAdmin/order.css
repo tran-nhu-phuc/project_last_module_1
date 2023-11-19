@@ -42,30 +42,22 @@ main {
 }
 
 .table {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    background-color: #ffff;
+    border-radius: 15px;
+    width: 80%;
+    margin-left: 150px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 table {
-    width: 80%;
-    background-color: #ffff;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-table tr th {
-    padding: 20px 10px;
-    text-align: start;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 table tr td {
-    padding: 20px 10px;
-    text-align: start;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    height: 100px;
+    text-align: center;
 }
 
 .container {
@@ -121,6 +113,9 @@ body {
 
 .productOrderAlert {
     overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+
 }
 
 .containerOrder .orderProduct {
@@ -162,3 +157,5 @@ body {
     text-align: center;
     padding: 10px 5px;
 }
+
+.productOrderAlert {}

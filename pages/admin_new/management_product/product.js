@@ -29,6 +29,7 @@ function addNew() {
 }
 function resultProduct() {
   let local = JSON.parse(localStorage.getItem("product_new"));
+  let checkStatus;
   let table = "<table>";
   table +=
     "<tr>" +
@@ -37,20 +38,29 @@ function resultProduct() {
     "<th>Giá</th>" +
     "<th>Tồn kho</th>" +
     "<th>Ảnh</th>" +
+    "<th>Trạng thái</th>" +
     "<th>Loại</th>" +
     "<th>Xóa</th>";
   ("</tr>");
   for (let i = 0; i < local.length; i++) {
-    table += `<tr>
+    if (local[i].status == 1) {
+      checkStatus = "còn hàng";
+    } else {
+      checkStatus = "hết hàng";
+    }
+    if (local[i].status == 1) {
+      table += `<tr>
              <td>${local[i].id}</td>
              <td>${local[i].name}</td>
              <td>${local[i].cost}đ</td>
              <td>${local[i].stock}</td>
              <td><img src="../../../${local[i].image}" alt="iphone 15"  style="width: 80px; height: 80px"></td>
+             <td>${checkStatus}</td>
              <td>${local[i].category}</td>
              <td><button onclick="editProduct(${i})" id='addEdit'>edit</button></td>
              <td><button onclick="delete_product(${i})" id='addDelete'>delete</button></td>
           </tr>`;
+    }
   }
   table += "</table>";
   document.getElementById("table_id").innerHTML = table;
@@ -77,6 +87,7 @@ function add() {
       stock: stock,
       image: image,
       category: kind,
+      status: 1,
     });
     document.getElementById("addNewCreate").style.display = "none";
     document.querySelector("main").style.backgroundColor = "#ffff";
@@ -98,28 +109,53 @@ function cancelNew() {
 }
 function editProduct(index) {
   let local = JSON.parse(localStorage.getItem("product_new"));
-  document.getElementById("addEditNew").innerHTML =
-    `<input type="text" value="${local[index].id}" id="EMXP" title="Nhập mã sản phẩm"/>` +
-    `<input type="text" value="${local[index].name}" id="ETSP" title="Nhập tên sản phẩm"/>` +
-    `<input type="text" value="${local[index].cost}" id="EDG"/ title="Nhập giá của sản phẩm">` +
-    `<input type="text" value="${local[index].stock}" id="ETK" title="Nhập tồn kho"/>` +
-    `<input type="text" value="${local[index].image}" id="EHA" title="Nhập link ảnh sản phẩm"/>` +
-    `<button onclick="clickEdit(${index})" id="edit">click to edit</button>` +
-    `<button onclick="cancelEdit()" id='editCancel'>cancel</button>`;
+  document.getElementById("editUser").innerHTML = `<div class="container">
+        <input type="text" placeholder="${local[index].name}" id="ETSP"/>
+        <input type="text" placeholder="${local[index].cost}" id="EDG"/>
+        <input type="text" placeholder="${local[index].stock}" id="ETK"/>
+        <input type="text" placeholder="${local[index].category}" id="EK"/>
+        <input type="text" placeholder="${local[index].image}" id="EHA"/>
+        <input type="text" placeholder="${local[index].status}" id="ST"/>
+        <div class="buttonCreate">
+          <input type="button" value="Edit" onclick='clickEdit(${index})' />
+          <input type="button" value="Cancel" onclick='cancelNew()'/>
+        </div>
+      </div>`;
+  document.getElementById("editUser").style.display = "block";
+  document.querySelector("body").style.overflowY = "hidden";
+  document.querySelector("body").style.backgroundColor = "#979595";
 }
 
 function clickEdit(index) {
   let local = JSON.parse(localStorage.getItem("product_new"));
-  let editCodeProduct = document.getElementById("EMXP").value;
-  let editNameProduct = document.getElementById("ETSP").value;
-  let editCost = document.getElementById("EDG").value;
-  let editHaveProduct = document.getElementById("ETK").value;
-  let editLinkImage = document.getElementById("EHA").value;
-  local[index].codeProduct = editCodeProduct;
-  local[index].nameProduct = editNameProduct;
-  local[index].cost = editCost;
-  local[index].haveProduct = editHaveProduct;
-  local[index].imgLink = editLinkImage;
+  let NameProduct = document.getElementById("ETSP").value;
+  let CostProduct = document.getElementById("EDG").value;
+  let StockProduct = document.getElementById("ETK").value;
+  let KindProduct = document.getElementById("EK").value;
+  let ImageProduct = document.getElementById("EHA").value;
+  let StatusProduct = document.getElementById("ST").value;
+  if (
+    NameProduct != "" ||
+    CostProduct != "" ||
+    StockProduct != "" ||
+    KindProduct != "" ||
+    ImageProduct != "" ||
+    StatusProduct != ""
+  ) {
+    local[index] = {
+      ...local[index],
+      name: NameProduct,
+      cost: CostProduct,
+      stock: StockProduct,
+      image: ImageProduct,
+      category: KindProduct,
+      status: StatusProduct,
+    };
+  } else {
+    local[index] = {
+      ...local[index],
+    };
+  }
   localStorage.setItem("product_new", JSON.stringify(local));
   resultProduct(local);
 }
@@ -127,7 +163,10 @@ function delete_product(index) {
   let check = confirm("are you sure wanna delete?");
   if (check) {
     let local = JSON.parse(localStorage.getItem("product_new"));
-    local.splice(index, 1);
+    local[index] = {
+      ...local[index],
+      status: 2,
+    };
     localStorage.setItem("product_new", JSON.stringify(local));
     resultProduct(local);
   }

@@ -17,11 +17,11 @@ class User {
     let checkLogin = localLogin.find((item) => {
       return item.email === email && item.password === password;
     });
-    if (checkLogin) {
+    if (checkLogin.status == 1) {
       return {
         name: checkLogin.name,
         id: checkLogin.id,
-        status: true,
+        status: 1,
       };
     } else {
       return false;

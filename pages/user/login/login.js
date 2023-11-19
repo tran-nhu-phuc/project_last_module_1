@@ -7,6 +7,8 @@ function getLogin() {
   if (checkLogin) {
     window.location.href = "../../../index.html";
     localStorage.setItem("userLogin", JSON.stringify(checkLogin));
+  } else if (checkLogin == false) {
+    alert("không thể vào được");
   } else {
     alert("tài khoản không tồn tại");
   }

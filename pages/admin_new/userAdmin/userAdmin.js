@@ -1,6 +1,8 @@
 function renderUser() {
   let local = JSON.parse(localStorage.getItem("user"));
   let table = "<table>";
+  let checkUser;
+  let checkStatusUser;
   table +=
     "<th>ID</th>" +
     "<th>Email</th>" +
@@ -10,12 +12,22 @@ function renderUser() {
     "<th colspan='2'>Hành dộng</th>";
   ("</tr>");
   for (let i = 0; i < local.length; i++) {
+    if (local[i].role == 2) {
+      checkUser = "user";
+    } else {
+      checkUser = "admin";
+    }
+    if (local[i].status == 1) {
+      checkStatusUser = "đang hoạt động";
+    } else {
+      checkStatusUser = "<span style='color:red'>đã block</span>";
+    }
     table += `<tr>
                 <td>${local[i].id}</td>
                 <td>${local[i].email}</td>
                 <td>${local[i].name}</td>
-                <td>${local[i].role}</td>
-                <td>${local[i].status}</td>
+                <td>${checkUser}</td>
+                <td>${checkStatusUser}</td>
                 <td><button onclick="editUser(${i})" style="padding: 10px 20px
 ;background-color:orange; border-radius:10px;color:#ffff ">Edit</button></td>
                 <td><button onclick="deleteUser(${i})" style="padding: 10px 20px

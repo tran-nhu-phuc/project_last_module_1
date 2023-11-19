@@ -8,7 +8,6 @@ main {
 .search {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
 }
 
 #addEditNew {
@@ -17,7 +16,9 @@ main {
     display: flex;
     column-gap: 20px;
     padding-left: 200px;
+    display: none;
 }
+
 
 #addEditNew>input {
     border-radius: 10px;
@@ -61,7 +62,6 @@ main {
 .action-add-new {
     width: 100%;
     display: flex;
-    margin-left: 7%;
     margin-top: 30px;
 }
 
@@ -104,10 +104,10 @@ main {
 .table {
     background-color: #ffff;
     border-radius: 15px;
-    width: 80%;
-    margin-left: 150px;
     padding: 10px;
     margin-top: 10px;
+    width: 80%;
+    margin-left: 8%;
 }
 
 table {
