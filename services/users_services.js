@@ -17,7 +17,7 @@ class User {
     let checkLogin = localLogin.find((item) => {
       return item.email == email && item.password == password;
     });
-    if (checkLogin.status == 1) {
+    if (checkLogin.status == 1 && checkLogin.role == 2) {
       return {
         name: checkLogin.name,
         id: checkLogin.id,

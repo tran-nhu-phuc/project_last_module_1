@@ -1,15 +1,15 @@
 function getRegister() {
   event.preventDefault();
-  let fulName = document.getElementById("fulname").value;
+  let fulName = document.getElementById("fulName").value;
   let number = document.getElementById("number").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
-  let passwordAgain = document.getElementById("passwordagain").value;
+  let passwordAgain = document.getElementById("passwordAgain").value;
   let arrayPassWord = [];
   arrayPassWord.push(password, passwordAgain);
   let getServices = new User();
   let checkRegister = getServices.Register(email, arrayPassWord);
-  if (checkRegister === true) {
+  if (checkRegister === true && password.length > 8 && password.length < 20) {
     localUser = {
       id: 0,
       name: fulName,

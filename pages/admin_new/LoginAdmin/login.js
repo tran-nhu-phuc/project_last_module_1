@@ -1,18 +1,25 @@
 function loginAdmin() {
+  event.preventDefault();
+  window.location.reload();
   let getUser = getAllItems("user");
   let email = document.getElementById("form2Example1").value;
   let password = document.getElementById("form2Example2").value;
-  let login = new User();
-  let checkLogin = login.Login(email, password);
-  let user = getUser.find((item) => {
-    return item.id == checkLogin.id;
+  let user = getUser.findIndex((item) => {
+    return item.email == email;
   });
-  if (checkLogin && user.role == 1) {
+  if (
+    getUser[user].password == password &&
+    getUser[user].email == email &&
+    getUser[user].role == 1
+  ) {
+    let admin = {
+      name: getUser[user].name,
+      id: getUser[user].id,
+      status: 1,
+    };
+    localStorage.setItem("LoginAdmin", JSON.stringify(admin));
     window.location.href = "../dashboard/dashboard.html";
-    localStorage.setItem("LoginAdmin", JSON.stringify(checkLogin));
-  } else if (checkLogin == false) {
-    alert("không có quyền truy cập");
   } else {
-    alert("tài khoản không tồn tại");
+    alert("không có quyền truy cập");
   }
 }

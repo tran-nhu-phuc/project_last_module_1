@@ -72,3 +72,7 @@ form .main button {
     margin-top: 5px;
     color: blue;
 }
+
+.header {
+    padding-top: 10px;
+}

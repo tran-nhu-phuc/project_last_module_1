@@ -391,39 +391,26 @@
         </div>
       </nav>
     </header>
-    <form>
+    <form action="#">
       <div class="main">
         <h2><i class="fa-brands fa-apple"></i></h2>
-        <input type="text" placeholder="your full name" id="fulname" max="40" />
+        <input type="text" placeholder="your full name" id="fulName" />
         <input
           type="number"
           placeholder="your number"
           id="number"
-          max="10"
-          min="8"
+          maxlength="12"
         />
-        <input
-          type="email"
-          placeholder="your email"
-          id="email"
-          max="50"
-          min="15"
-        />
-        <input
-          type="password"
-          placeholder="password"
-          id="password"
-          min="8"
-          max="30"
-        />
+        <input type="email" placeholder="your email" id="email" />
+        <input type="password" placeholder="password" id="password" />
         <input
           type="password"
           placeholder="password again"
-          id="passwordagain"
-          min="8"
-          max="30"
+          id="passwordAgain"
         />
-        <button onclick="getRegister()">Create</button>
+        <button onclick="getRegister()" type="button" value="Submit">
+          Create
+        </button>
 
         <a href="../login/login.html" style="text-decoration: none">Login</a>
       </div>
@@ -433,14 +420,4 @@
   <script src="../../../services/users_services.js"></script>
   <script src="../../../models/usersDB.js"></script>
   <script src="./register.js"></script>
-  <script src="../../../index.js"></script>
-  <script src="../shop/shop.js"></script>
-  <script>
-    getRenderNameUser();
-  </script>
 </html>
-<style>
-  .header {
-    padding-top: 10px;
-  }
-</style>
