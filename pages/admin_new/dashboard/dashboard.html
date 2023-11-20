@@ -81,33 +81,28 @@
             <button>New Report</button>
           </div>
         </div>
-        <div class="newUser">
-          <div class="listUser">
-            <div class="user">
-              <h4>Name</h4>
-              <h4>Email</h4>
-              <h4>Phone</h4>
-              <h4>Date</h4>
-            </div>
+        <div class="userOrders" id="userOrders">
+          <div class="userOderNew">
+            <div>Name</div>
+            <div>Phone Number</div>
+            <div>Email</div>
           </div>
+          `;
         </div>
       </section>
-      <section class="grid-c"></section>
+      <section class="grid-c">
+        <div class="contentCost">
+          <h2>Weekly Total Price</h2>
+        </div>
+        <div class="CostOrder" id="CostOrder">
+          <strong>1231231231312312</strong>
+        </div>
+      </section>
       <section class="chartProduct">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="371"
-          height="116"
-          viewBox="0 0 371 116"
-          fill="none"
-        >
-          <path
-            d="M54.7692 59.5H-11V161.5H378V70.5H362.97C349.665 70.5 336.908 65.1969 327.524 55.7646L288.695 16.7354C279.311 7.3031 266.554 2 253.249 2H153.547C140.241 2 127.485 7.3031 118.101 16.7354L90.215 44.7646C80.831 54.1969 68.0744 59.5 54.7692 59.5Z"
-            fill="#C9F7F5"
-            stroke="#1BC5BD"
-            stroke-width="3"
-          />
-        </svg>
+        <img
+          src="https://pantado.edu.vn/storage/media/coming%20soon%201_1637048331.jpg"
+          alt="coming soon"
+        />
       </section>
       <section class="grid-e">
         <div class="text-grid-e">
@@ -124,7 +119,7 @@
           </ul>
         </div>
         <div class="button-grid-e">
-          <button>Create Reports</button>
+          <button type="button">Create Reports</button>
         </div>
       </section>
     </main>
@@ -134,5 +129,12 @@
   <script src="../../../models/ordersDB.js"></script>
   <script>
     renderAll();
+    renderNewUser();
   </script>
 </html>
+<style>
+  .chartProduct img {
+    width: 100%;
+    height: 100%;
+  }
+</style>

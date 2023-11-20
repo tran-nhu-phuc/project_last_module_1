@@ -67,11 +67,7 @@
       </ul>
     </aside>
     <main>
-      <section class="search">
-        <div class="button-search">
-          <input type="search" placeholder="tìm kiếm người dùng " />
-          <button>tìm kiếm</button>
-        </div>
+      <section class="search" style="height: 9%">
         <div class="addNew">
           <button onclick="addNew()">Thêm mới</button>
         </div>
@@ -83,9 +79,14 @@
       <section class="editProduct" id="editProduct">
         <!-- editUser input -->
       </section>
-      <section class="table" id="table_id">
+      <section class="table" id="table_id" style="height: 86%">
         <!-- <table>
         </table> -->
+      </section>
+      <section style="height: 50%" id="listNumberProduct">
+        <div style="height: 100%" class="numberList">
+          <span id="number">1</span>
+        </div>
       </section>
     </main>
     <script src="./product.js"></script>
@@ -94,5 +95,29 @@
   </body>
   <script>
     resultProduct();
+    renderListNumberProduct();
   </script>
 </html>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .numberList > span {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+  }
+  .numberList div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

@@ -1,7 +1,12 @@
 main {
-    margin-left: 120px;
-    overflow-x: hidden;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -60,9 +65,17 @@ main {
 }
 
 .action-add-new {
-    width: 100%;
+    height: 10%;
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
 }
 
 .action-add-new input {
@@ -105,13 +118,13 @@ main {
     background-color: #ffff;
     border-radius: 15px;
     padding: 10px;
-    margin-top: 10px;
     width: 80%;
     margin-left: 8%;
 }
 
 table {
     width: 100%;
+    height: 100%;
 }
 
 table tr td {
@@ -147,6 +160,7 @@ table tr td {
 body {
     position: relative;
     z-index: 10000;
+    height: 100vh;
 }
 
 .container {

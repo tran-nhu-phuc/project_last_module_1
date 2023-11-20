@@ -12,6 +12,7 @@ let array = [
   },
 ];
 function addNew() {
+  document.getElementById("addNewCreate").style.display = "block";
   document.getElementById("addNewCreate").innerHTML = `<div class="container">
         <input type="text" placeholder="Tên Sản Phẩm" id="NameProduct"/>
         <input type="text" placeholder="Nhập Giá" id="CostProduct"/>
@@ -23,12 +24,13 @@ function addNew() {
           <input type="button" value="Cancel" onclick='cancelNew()'/>
         </div>
       </div>`;
-  document.getElementById("addNewCreate").style.display = "block";
+
   document.querySelector("body").style.overflowY = "hidden";
-  document.querySelector("main").style.backgroundColor = "#979595";
 }
-function resultProduct() {
+function resultProduct(page = 1) {
   let local = JSON.parse(localStorage.getItem("product_new"));
+  let currentPage = (page - 1) * 7;
+  let resultProduct = local.splice(currentPage, 7);
   let checkStatus;
   let table = "<table>";
   table +=
@@ -42,21 +44,21 @@ function resultProduct() {
     "<th>Loại</th>" +
     "<th>Xóa</th>";
   ("</tr>");
-  for (let i = 0; i < local.length; i++) {
-    if (local[i].status == 1) {
+  for (let i = 0; i < resultProduct.length; i++) {
+    if (resultProduct[i].status == 1) {
       checkStatus = "còn hàng";
     } else {
       checkStatus = "hết hàng";
     }
-    if (local[i].status == 1) {
+    if (resultProduct[i].status == 1 || resultProduct[i].status == 2) {
       table += `<tr>
-             <td>${local[i].id}</td>
-             <td>${local[i].name}</td>
-             <td>${local[i].cost}đ</td>
-             <td>${local[i].stock}</td>
-             <td><img src="../../../${local[i].image}" alt="iphone 15"  style="width: 80px; height: 80px"></td>
+             <td>${resultProduct[i].id}</td>
+             <td>${resultProduct[i].name}</td>
+             <td>${resultProduct[i].cost}đ</td>
+             <td>${resultProduct[i].stock}</td>
+             <td><img src="../../../${resultProduct[i].image}" alt="iphone 15"  style="width: 80px; height: 80px"></td>
              <td>${checkStatus}</td>
-             <td>${local[i].category}</td>
+             <td>${resultProduct[i].category}</td>
              <td><button onclick="editProduct(${i})" id='addEdit'>edit</button></td>
              <td><button onclick="delete_product(${i})" id='addDelete'>delete</button></td>
           </tr>`;
@@ -66,6 +68,24 @@ function resultProduct() {
   document.getElementById("table_id").innerHTML = table;
 }
 resultProduct();
+function renderListNumberProduct() {
+  const getProduct = getAllItems("product_new");
+  const containerProductNumber = document.querySelector("#listNumberProduct");
+  containerProductNumber.innerHTML = `
+        <div style="height: 100%;width:100%;display:flex" class="numberList" id="numberList">
+        </div>`;
+  renderNumberPage(getProduct.length, 7);
+}
+function renderNumberPage(totalProduct, productOnePages) {
+  let result = Math.ceil(totalProduct / productOnePages);
+  const itemNumberProduct = document.querySelector("#numberList");
+  itemNumberProduct.innerHTML = "";
+  for (let i = 1; i <= result; i++) {
+    itemNumberProduct.innerHTML += `
+    <span id="number" onclick=" resultProduct(${i})">${i}</span>
+    `;
+  }
+}
 function add() {
   let local = JSON.parse(localStorage.getItem("product_new"));
   let name = document.getElementById("NameProduct").value;
@@ -112,7 +132,10 @@ function editProduct(index) {
         <input type="text" value="${local[index].stock}" id="ETK"/>
         <input type="text" value="${local[index].category}" id="EK"/>
         <input type="text" value="${local[index].image}" id="EHA"/>
-        <input type="text" value="${local[index].status}" id="ST"/>
+        <select id="ST">
+          <option value="1">Còn hàng</option>
+          <option value="2">Hết hàng</option>
+        </select>
         <div class="buttonCreate">
           <input type="button" value="Edit" onclick='clickEdit(${index})' />
           <input type="button" value="Cancel" onclick='cancelEdit()'/>
@@ -159,7 +182,7 @@ function delete_product(index) {
     let local = JSON.parse(localStorage.getItem("product_new"));
     local[index] = {
       ...local[index],
-      status: 2,
+      status: 3,
     };
     localStorage.setItem("product_new", JSON.stringify(local));
     resultProduct(local);

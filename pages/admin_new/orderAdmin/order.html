@@ -66,12 +66,6 @@
       </ul>
     </aside>
     <main>
-      <section class="search">
-        <div class="button-search">
-          <input type="search" placeholder="tìm kiếm người dùng " />
-          <button>tìm kiếm</button>
-        </div>
-      </section>
       <section class="editOrder" id="editOrder">
         <!-- editOrder input -->
       </section>
@@ -95,11 +89,45 @@
         </div>
         <div class="productOrderAlert" id="productOrderAlert"></div>
       </section>
+      <section class="listNumberOrders">
+        <div class="itemOrders">
+          <span>1</span>
+        </div>
+      </section>
     </main>
   </body>
   <script src="./order.js"></script>
   <script src="../../../roponsitory/repository.js"></script>
   <script src="../../../models/ordersDB.js"></script>
   <script src="../../../models/productsDB.js"></script>
-  <script></script>
+  <script>
+    renderOder();
+    renderListNumberOrder;
+  </script>
 </html>
+<style>
+  .listNumberOrders {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 30px;
+  }
+  .listNumberOrders .itemOrders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .listNumberOrders .itemOrders span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+</style>

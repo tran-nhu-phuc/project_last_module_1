@@ -223,3 +223,19 @@ function addToCart(id) {
     renderCartNumber();
   }
 }
+
+function searProductData() {
+  const getProduct = getAllItems("product_new");
+  const onSearchProduct = document.querySelector("#searchProduct").value;
+  const containerProductSearch = document.getElementById("listSearchProduct");
+  let productName = getProduct.filter((item) => {
+    return item.name.toLowerCase().includes(onSearchProduct);
+  });
+  containerProductSearch.innerHTML = "";
+  productName.forEach((element) => {
+    containerProductSearch.innerHTML += `<li onclick="renderToDeTailChild(${element.id})">${element.name}</li>`;
+  });
+}
+function renderToDeTailChild(id) {
+  window.location.href = `../cart_detail/cart.html?id=${id}`;
+}

@@ -385,13 +385,10 @@
                       <input
                         type="search"
                         placeholder="search"
-                        id="search"
+                        id="searchProduct"
                         oninput="searProductData()"
                       />
-                      <button>search</button>
-                    </div>
-                    <div class="listProductSearch" id="listProductSearch">
-                      <div class="product-search" id="product-search"></div>
+                      <ul id="listSearchProduct"></ul>
                     </div>
                   </div>
                 </i>
@@ -717,7 +714,7 @@
   <script src="./services/users_services.js"></script>
   <script src="./models/usersDB.js"></script>
   <script src="./pages/user/shop/shop.js"></script>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
   <script>
     getRenderNameUser();
     renderCartNumber();

@@ -1,10 +1,11 @@
-function renderOder() {
+function renderOder(page = 1) {
   let local = JSON.parse(localStorage.getItem("orders"));
+  let currentPage = (page - 1) * 7;
+  let resultUser = local.splice(currentPage, 7);
   let changeValueStatus;
   let changeValuePayment;
   let table = "<table>";
   table +=
-    "<th>Giao hàng</th>" +
     "<th>ID Người Mua</th>" +
     "<th>Sản Phẩm</th>" +
     "<th>Hình thức thanh toán</th>" +
@@ -12,29 +13,28 @@ function renderOder() {
     "<th>Trạng thái</th>" +
     "<th colspan='2'>Hành dộng</th>";
   ("</tr>");
-  for (let i = 0; i < local.length; i++) {
-    if (local[i].status == 1) {
+  for (let i = 0; i < resultUser.length; i++) {
+    if (resultUser[i].status == 1) {
       changeValueStatus = "đã nhận đơn";
-    } else if (local[i].status == 2) {
+    } else if (resultUser[i].status == 2) {
       changeValueStatus = "đang giao";
-    } else if (local[i].status == 3) {
+    } else if (resultUser[i].status == 3) {
       changeValueStatus = "hoàn thành";
     } else {
       changeValueStatus = "đơn hàng chưa được xác nhận";
     }
-    if (local[i].payment == 1) {
+    if (resultUser[i].payment == 1) {
       changeValuePayment = "thanh toán khi nhận hàng";
-    } else if (local[i].status == 2) {
+    } else if (resultUser[i].status == 2) {
       changeValuePayment = "thanh toán online";
     } else {
       changeValuePayment = "chưa xác nhận hình thức thanh toán";
     }
-    table += `<tr>
-                <td><input type="checkbox"></td>
-                <td>${local[i].idUser}</td>
+    table += `<tr id="checkBoxRow">
+                <td>${resultUser[i].idUser}</td>
                 <td><button onclick="viewProduct(${i})" style="padding:5px 5px; background-color:blue; color:#ffff;border-radius:10px;">Xem sản phẩm</button></td>
                 <td>${changeValuePayment}</td>
-                <td>${local[i].date}</td>
+                <td>${resultUser[i].date}</td>
                 <td>${changeValueStatus}</td>
                 <td><button onclick="editOrder(${i})" style="padding: 10px 20px
 ;background-color:orange; border-radius:10px;color:#ffff ">Edit</button></td>
@@ -46,9 +46,32 @@ function renderOder() {
   document.getElementById("table_list").innerHTML = table;
 }
 renderOder();
+function renderListNumberOrder() {
+  const getOrder = getAllItems("orders");
+  const containerOrder = document.getElementById("listNumberOrders");
+  containerOrder.innerHTML += `
+        <div class="itemOrders">
+        </div>`;
+  renderPageNumberOrder(getOrder.length, 7);
+}
+function renderPageNumberOrder(totalOrder, orderOnePages) {
+  let result = Math.ceil(totalOrder / orderOnePages);
+  const itemNumberProduct = document.querySelector("#numberList");
+  itemNumberProduct.innerHTML = "";
+  for (let i = 1; i <= result; i++) {
+    itemNumberProduct.innerHTML += `
+    <span onclick=" renderOder(${i})">${i}</span>
+    `;
+  }
+}
 function editOrder(index) {
   document.getElementById("editOrder").innerHTML = `<div class="container">
-        <input type="text" placeholder="Trạng thái" id="statusOrder"/>
+        <select id="statusOrder">
+          <option value="1">Đã nhận</option>
+          <option value="2">Đang giao</option>
+          <option value="3">Hoàn thành</option>
+          <option value="4">Đơn hàng chưa được xác nhận</option>
+        </select>
         <div class="buttonCreate">
           <input type="button" value="Edit" onclick='edit(${index})' />
           <input type="button" value="Cancel" onclick='cancelNew()'/>

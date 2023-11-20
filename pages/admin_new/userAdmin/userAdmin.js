@@ -1,5 +1,7 @@
-function renderUser() {
+function renderUser(page = 1) {
   let local = JSON.parse(localStorage.getItem("user"));
+  let currentPage = (page - 1) * 7;
+  let resultUser = local.splice(currentPage, 7);
   let table = "<table>";
   let checkUser;
   let checkStatusUser;
@@ -11,21 +13,21 @@ function renderUser() {
     "<th>Trạng thái</th>" +
     "<th colspan=`2`>Hành dộng</th>";
   ("</tr>");
-  for (let i = 0; i < local.length; i++) {
-    if (local[i].role == 2) {
+  for (let i = 0; i < resultUser.length; i++) {
+    if (resultUser[i].role == 2) {
       checkUser = "user";
     } else {
       checkUser = "admin";
     }
-    if (local[i].status == 1) {
+    if (resultUser[i].status == 1) {
       checkStatusUser = "đang hoạt động";
     } else {
       checkStatusUser = "<span style='color:red'>đã block</span>";
     }
     table += `<tr>
-                <td>${local[i].id}</td>
-                <td>${local[i].email}</td>
-                <td>${local[i].name}</td>
+                <td>${resultUser[i].id}</td>
+                <td>${resultUser[i].email}</td>
+                <td>${resultUser[i].name}</td>
                 <td>${checkUser}</td>
                 <td>${checkStatusUser}</td>
                 <td><button onclick="editUser(${i})" style="padding: 10px 15px
@@ -38,10 +40,34 @@ function renderUser() {
   document.getElementById("table_list").innerHTML = table;
 }
 renderUser();
+function renderUserNumber() {
+  const getUser = getAllItems("user");
+  const containerBoxUser = document.querySelector("#listNumberUser");
+  containerBoxUser.innerHTML = "";
+  containerBoxUser.innerHTML += `
+        <div class="ItemUserNumber" id="ItemUserNumber" >
+        </div>`;
+  renderBoxNumberUser(getUser.length, 7);
+}
+function renderBoxNumberUser(UserLength, Number) {
+  let result = Math.ceil(UserLength / Number);
+  let getContainer = document.querySelector("#ItemUserNumber");
+  getContainer.innerHTML = "";
+  for (let i = 1; i <= result; i++) {
+    getContainer.innerHTML += `<span class="itemNumber" onclick="renderUser(${i})">${i}</span>`;
+  }
+}
+renderUserNumber();
 function editUser(index) {
   document.getElementById("editUser").innerHTML = `<div class="container">
-        <input type="text" placeholder="Vai trò" id="kindUser"/>
-        <input type="text" placeholder="Trạng thái" id="statusUser"/>
+        <select id="KindEditUser">
+          <option value="1">Admin</option>
+          <option value="2">User</option>
+        </select>
+        <select id="statusEditUser">
+          <option value="1">Đang hoạt động</option>
+          <option value="2">Block</option>
+        </select>
         <div class="buttonCreate">
           <input type="button" value="Edit" onclick='edit(${index})' />
           <input type="button" value="Cancel" onclick='cancelNew()'/>
@@ -53,12 +79,14 @@ function editUser(index) {
 }
 function edit(index) {
   const getUser = getAllItems("user");
-  let roleUser = document.getElementById("kindUser");
-  let statusUser = document.getElementById("statusUser");
+  let statusEdit = document.querySelector("#statusEditUser");
+  let KindEdit = document.querySelector("#KindEditUser");
+  let statusEditOptions = statusEdit.value;
+  let kindEditOptions = KindEdit.value;
   getUser[index] = {
     ...getUser[index],
-    role: roleUser.value,
-    status: statusUser.value,
+    role: kindEditOptions,
+    status: statusEditOptions,
   };
   document.getElementById("editUser").style.display = "none";
   document.querySelector("body").style.overflowY = "auto";
